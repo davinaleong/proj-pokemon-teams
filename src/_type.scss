@@ -18,6 +18,18 @@ a:hover {
     color: color('blue', 'dark');
 }
 
+@each $key, $color in $colors {
+    @if $key != 'gray' and $key != 'blue' and $key != 'black' and $key != 'white' {
+        a.text-#{$key} {
+            color: map-get($color, 'base');
+        }
+    
+        a.text-#{$key}:hover {
+            color: map-get($color, 'dark');
+        }
+    }
+}
+
 /* Text Transformations */
 strong, b, .text-bold {
     font-weight: bold;

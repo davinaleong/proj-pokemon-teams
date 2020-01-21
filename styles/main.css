@@ -74,6 +74,30 @@ a:hover {
   color: #1976d2;
 }
 
+a.text-red {
+  color: #F44336;
+}
+
+a.text-red:hover {
+  color: #D32F2F;
+}
+
+a.text-amber {
+  color: #ffc107;
+}
+
+a.text-amber:hover {
+  color: #FFA000;
+}
+
+a.text-yellow {
+  color: #ffeb3b;
+}
+
+a.text-yellow:hover {
+  color: #FBC02D;
+}
+
 /* Text Transformations */
 strong, b, .text-bold {
   font-weight: bold;
