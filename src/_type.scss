@@ -30,6 +30,14 @@ a:hover {
     }
 }
 
+a.text-muted {
+    color: color('gray', '500');
+}
+
+a.text-muted:hover {
+    color: color('gray', '700');
+}
+
 /* Text Transformations */
 strong, b, .text-bold {
     font-weight: bold;
