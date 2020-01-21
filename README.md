@@ -4,6 +4,9 @@ Pokemon-Teams App
 ## TODO:
 
 1. Import image assets
-1. Setup data in `JSON` files
-1. Static template in `HTML`, `SASS` and `jQuery`
-1. `ReactJS` App
+2. Setup data in `JSON` files
+3. Refactor template:
+   1. Remove `aside`
+   2. Put search in separate page
+   3. Make all links buttons and style them appropriately
+4. `ReactJS` App

@@ -14,6 +14,7 @@ html, body {
   font-family: Source Sans Pro, Arial, sans-serif;
   color: #212121;
   background: #f5f5f5;
+  min-height: 100vh;
 }
 
 img {
@@ -331,11 +332,11 @@ code, .text-code {
   margin-bottom: 0.5rem;
 }
 
-.ml-2, .btn-home {
+.ml-2, button.home {
   margin-left: 0.5rem;
 }
 
-.p-2, ul.breadcrumb, aside, main, .team-item {
+.p-2, ul.breadcrumb, main, .team-item {
   padding: 0.5rem;
 }
 
@@ -684,25 +685,6 @@ ul.breadcrumb li + li:before {
   color: #000;
 }
 
-div#app {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: 'aside main main main main';
-}
-
-aside {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: aside;
-}
-
-main {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
-  grid-area: main;
-}
-
 .container-search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -721,7 +703,7 @@ main {
   height: 2rem;
 }
 
-.btn-search, .btn-home, .btn-top {
+button {
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -730,17 +712,17 @@ main {
   border-radius: 0.1rem;
 }
 
-.btn-top {
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  -webkit-box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
-          box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
-}
-
-.btn-search:hover, .btn-home:hover, .btn-top:hover {
+button:hover {
   background-color: #1976d2;
   cursor: pointer;
+}
+
+button.top {
+  position: fixed;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  -webkit-box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
+          box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
 }
 
 .team-item {

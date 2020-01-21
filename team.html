@@ -13,286 +13,254 @@
     <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/png">
 </head>
 <body>
-    <div id="app">
-        <aside>
-            <h1>All Teams</h1>
-            <div class="container-search">
-                <form>
-                    <input type="text" class="field-search" placeholder="Search..." required>
-                    <button type="button" class="btn-search"><i class="fas fa-search"></i></button>
-                    <button type="button" class="btn-home" onclick="window.location = './index.html';"><i class="fas fa-home"></i></button>
-                </form>
-            </div>
-            <div class="container-team-list">
-                <div class="team-item">
-                    <h6 class="item-title"><a href="./team.html">Kanto Region</a></h6>
-                    <p class="item-gen">Gen 7</p>
-                    <div class="item-rating">
-                        <i class="fas fa-star text-amber"></i>
-                        <i class="fas fa-star text-amber"></i>
-                        <i class="fal fa-star text-yellow"></i>
-                        <i class="fal fa-star text-yellow"></i>
-                        <i class="fal fa-star text-yellow"></i>
-                    </div>
-                </div>
-                <div class="team-item">
-                    <h6 class="item-title"><a href="./team.html">Levitate Ability</a></h6>
-                    <p class="item-gen">Gen 7</p>
-                    <div class="item-rating">
-                        <span class="text-muted">Unrated</span>
-                    </div>
+    <main>
+        <ul class="breadcrumb">
+            <li><a href="./index.html">Home</a></li>
+            <li>Kanto Region</li>
+        </ul>
+
+        <section class="container-team">
+            <h2 class="team-title">Kanto Region</h2>
+            <div class="team-subcontent">
+                <p class="slot-gen text-secondary">Gen 7</p>
+                <div class="slot-rating">
+                    <i class="fas fa-star text-amber"></i>
+                    <i class="fas fa-star text-amber"></i>
+                    <i class="fal fa-star text-yellow"></i>
+                    <i class="fal fa-star text-yellow"></i>
+                    <i class="fal fa-star text-yellow"></i>
                 </div>
             </div>
-        </aside>
-        <main>
-            <ul class="breadcrumb">
-                <li><a href="./index.html">Home</a></li>
-                <li>Kanto Region</li>
-            </ul>
 
-            <section class="container-team">
-                <h2 class="team-title">Kanto Region</h2>
-                <div class="team-subcontent">
-                    <p class="slot-gen text-secondary">Gen 7</p>
-                    <div class="slot-rating">
-                        <i class="fas fa-star text-amber"></i>
-                        <i class="fas fa-star text-amber"></i>
-                        <i class="fal fa-star text-yellow"></i>
-                        <i class="fal fa-star text-yellow"></i>
-                        <i class="fal fa-star text-yellow"></i>
-                    </div>
-                </div>
-
-                <div class="container-team-slots">
-                    <div class="team-slot">
-                        <h3 class="slot-name">Aerodactyl</h3>
-                        <h4 class="slot-role">Lead</h4>
-                        <div class="pokemon-images">
-                            <div class="cell-image">
-                                <img src="./assets/images/pokemon/aerodactyl.gif" height="120px">
-                                <p class="cell-types"><strong><span class="text-rock">Rock</span>/<span class="text-flying">Flying</span></strong></p>
-                                <p class="cell-ability">Unnerve</p>
-                            </div>
-                        </div>
-
-                        <div class="slot-nature">
-                            <h5 class="slot-title">Nature</h5>
-                            <p>Jolly (+S, -SA)</p>
-                        </div>
-
-                        <div class="slot-effort-values">
-                            <h5 class="slot-title">Effort Values</h5>
-                            <p>4 HP / 252 A / 252 S</p>
-                        </div>
-
-                        <!-- <div class="slot-individual-values">
-                            <h5 class="slot-title">Individual Values</h5>
-                            <p>31 S</p>
-                        </div> -->
-
-                        <div class="slot-moves-item">
-                            <div class="cell-moves">
-                                <h5 class="slot-title">Moves</h5>
-                                <p class="text-rock">Stealth Rocks</p>
-                                <p class="text-poison">Toxic</p>
-                                <p class="text-dark">Pursuit</p>
-                                <p class="text-rock">Stone Edge</p>
-                            </div>
-                            <div class="cell-item">
-                                <h5 class="slot-title">Item</h5>
-                                <img src="./assets/images/items/focus-sash.png">
-                            </div>
+            <div class="container-team-slots">
+                <div class="team-slot">
+                    <h3 class="slot-name">Aerodactyl</h3>
+                    <h4 class="slot-role">Lead</h4>
+                    <div class="pokemon-images">
+                        <div class="cell-image">
+                            <img src="./assets/images/pokemon/aerodactyl.gif" height="120px">
+                            <p class="cell-types"><strong><span class="text-rock">Rock</span>/<span class="text-flying">Flying</span></strong></p>
+                            <p class="cell-ability">Unnerve</p>
                         </div>
                     </div>
-                    <div class="team-slot">
-                        <h3 class="slot-name">Pikachu</h3>
-                        <h4 class="slot-role">Mixed Attacker</h4>
-                        <div class="pokemon-images">
-                            <div class="cell-image">
-                                <img src="./assets/images/pokemon/pikachu.gif" height="120px">
-                                <p class="cell-types"><strong><span class="text-electric">Electric</span></strong></p>
-                                <p class="cell-ability">Lightning Rod</p>
-                            </div>
-                        </div>
 
-                        <div class="slot-nature">
-                            <h5 class="slot-title">Nature</h5>
-                            <p>Mild (+SA, -SD)</p>
-                        </div>
-
-                        <div class="slot-effort-values">
-                            <h5 class="slot-title">Effort Values</h5>
-                            <p>4 HP / 252 SA / 252 S</p>
-                        </div>
-
-                        <div class="slot-moves-item">
-                            <div class="cell-moves">
-                                <h5 class="slot-title">Moves</h5>
-                                <p class="text-electric">Volt Tackle</p>
-                                <p class="text-grass">Grass Knot</p>
-                                <p class="text-water">Surf</p>
-                                <p class="text-electric">Volt Switch</p>
-                            </div>
-                            <div class="cell-item">
-                                <h5 class="slot-title">Item</h5>
-                                <img src="./assets/images/items/light-ball.png">
-                            </div>
-                        </div>
+                    <div class="slot-nature">
+                        <h5 class="slot-title">Nature</h5>
+                        <p>Jolly (+S, -SA)</p>
                     </div>
-                    <div class="team-slot">
-                        <h3 class="slot-name">Venusaur</h3>
-                        <h4 class="slot-role">Bulky Physical Attacker</h4>
-                        <div class="pokemon-images">
-                            <div class="cell-image">
-                                <img src="./assets/images/pokemon/venusaur.gif" height="120px">
-                                <p class="cell-types"><strong><span class="text-grass">Grass</span>/<span class="text-poison">Poison</span></strong></p>
-                                <p class="cell-ability">Overgrow</p>
-                            </div>
-                        </div>
 
-                        <div class="slot-nature">
-                            <h5 class="slot-title">Nature</h5>
-                            <p>Adamant (+A, -SA)</p>
-                        </div>
-
-                        <div class="slot-effort-values">
-                            <h5 class="slot-title">Effort Values</h5>
-                            <p>252 HP / 252 A / 4 S</p>
-                        </div>
-
-                        <div class="slot-moves-item">
-                            <div class="cell-moves">
-                                <h5 class="slot-title">Moves</h5>
-                                <p class="text-electric">Swords Dance</p>
-                                <p class="text-grass">Petal Blizzard</p>
-                                <p class="text-ground">Earthquake</p>
-                                <p class="text-dragon">Outrage</p>
-                            </div>
-                            <div class="cell-item">
-                                <h5 class="slot-title">Item</h5>
-                                <img src="./assets/images/items/life-orb.png">
-                            </div>
-                        </div>
+                    <div class="slot-effort-values">
+                        <h5 class="slot-title">Effort Values</h5>
+                        <p>4 HP / 252 A / 252 S</p>
                     </div>
-                    <div class="team-slot">
-                        <h3 class="slot-name">Charizard</h3>
-                        <h4 class="slot-role">Special Sweeper</h4>
-                        <div class="pokemon-images">
-                            <div class="cell-image">
-                                <img src="./assets/images/pokemon/charizard.gif" height="120px">
-                                <p class="cell-types"><strong><span class="text-fire">Fire</span>/<span class="text-flying">Flying</span></strong></p>
-                                <p class="cell-ability">Blaze</p>
-                            </div>
-                            <div class="cell-arrow text-secondary">
-                                <i class="fas fa-chevron-right fa-2x"></i>
-                            </div>
-                            <div class="cell-image-mega">
-                                <img src="./assets/images/pokemon/charizard_mega_y.gif" height="120px">
-                                <p class="cell-types"><strong><span class="text-fire">Fire</span>/<span class="text-flying">Flying</span></strong></p>
-                                <p class="cell-ability">Drought</p>
-                            </div>
-                        </div>
 
-                        <div class="slot-nature">
-                            <h5 class="slot-title">Nature</h5>
-                            <p>Timid (+S, -A)</p>
-                        </div>
+                    <!-- <div class="slot-individual-values">
+                        <h5 class="slot-title">Individual Values</h5>
+                        <p>31 S</p>
+                    </div> -->
 
-                        <div class="slot-effort-values">
-                            <h5 class="slot-title">Effort Values</h5>
-                            <p>4 HP / 252 SA / 252 S</p>
+                    <div class="slot-moves-item">
+                        <div class="cell-moves">
+                            <h5 class="slot-title">Moves</h5>
+                            <p class="text-rock">Stealth Rocks</p>
+                            <p class="text-poison">Toxic</p>
+                            <p class="text-dark">Pursuit</p>
+                            <p class="text-rock">Stone Edge</p>
                         </div>
-
-                        <div class="slot-moves-item">
-                            <div class="cell-moves">
-                                <h5 class="slot-title">Moves</h5>
-                                <p class="text-fire">Fire Blast</p>
-                                <p class="text-grass">Solar Beam</p>
-                                <p class="text-flying">Air Slash</p>
-                                <p class="text-fighting">Focus Blast</p>
-                            </div>
-                            <div class="cell-item">
-                                <h5 class="slot-title">Item</h5>
-                                <img src="./assets/images/items/charizardite-y.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-slot">
-                        <h3 class="slot-name">Blastoise</h3>
-                        <h4 class="slot-role">Support</h4>
-                        <div class="pokemon-images">
-                            <div class="cell-image">
-                                <img src="./assets/images/pokemon/blastoise.gif" height="120px">
-                                <p class="cell-types"><strong><span class="text-water">Water</span></strong></p>
-                                <p class="cell-ability">Torrent</p>
-                            </div>
-                        </div>
-
-                        <div class="slot-nature">
-                            <h5 class="slot-title">Nature</h5>
-                            <p>Bold (+D, -A)</p>
-                        </div>
-
-                        <div class="slot-effort-values">
-                            <h5 class="slot-title">Effort Values</h5>
-                            <p>252 HP / 60 D / 196 S</p>
-                        </div>
-
-                        <div class="slot-moves-item">
-                            <div class="cell-moves">
-                                <h5 class="slot-title">Moves</h5>
-                                <p class="text-water">Scald</p>
-                                <p class="text-ice">Ice Beam</p>
-                                <p class="text-poison">Toxic</p>
-                                <p class="text-normal">Rapid Spin</p>
-                            </div>
-                            <div class="cell-item">
-                                <h5 class="slot-title">Item</h5>
-                                <img src="./assets/images/items/sitrus-berry.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-slot">
-                        <h3 class="slot-name">Clefable</h3>
-                        <h4 class="slot-role">Special Bulky Attacker</h4>
-                        <div class="pokemon-images">
-                            <div class="cell-image">
-                                <img src="./assets/images/pokemon/clefable.gif" height="120px">
-                                <p class="cell-types"><strong><span class="text-electric">Fairy</span></strong></p>
-                                <p class="cell-ability">Magic Guard</p>
-                            </div>
-                        </div>
-
-                        <div class="slot-nature">
-                            <h5 class="slot-title">Nature</h5>
-                            <p>Bold (=D, -A)</p>
-                        </div>
-
-                        <div class="slot-effort-values">
-                            <h5 class="slot-title">Effort Values</h5>
-                            <p>252 HP / 252 D / 4 SD</p>
-                        </div>
-
-                        <div class="slot-moves-item">
-                            <div class="cell-moves">
-                                <h5 class="slot-title">Moves</h5>
-                                <p class="text-psychic">Calm Mind</p>
-                                <p class="text-fairy">Moonblast</p>
-                                <p class="text-fighting">Focus Blast</p>
-                                <p class="text-poison">Toxic</p>
-                            </div>
-                            <div class="cell-item">
-                                <h5 class="slot-title">Item</h5>
-                                <img src="./assets/images/items/light-ball.png">
-                            </div>
+                        <div class="cell-item">
+                            <h5 class="slot-title">Item</h5>
+                            <img src="./assets/images/items/focus-sash.png">
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-    </div>
+                <div class="team-slot">
+                    <h3 class="slot-name">Pikachu</h3>
+                    <h4 class="slot-role">Mixed Attacker</h4>
+                    <div class="pokemon-images">
+                        <div class="cell-image">
+                            <img src="./assets/images/pokemon/pikachu.gif" height="120px">
+                            <p class="cell-types"><strong><span class="text-electric">Electric</span></strong></p>
+                            <p class="cell-ability">Lightning Rod</p>
+                        </div>
+                    </div>
 
-    <button type="button" class="btn-top" onclick="window.location = '#app';">
+                    <div class="slot-nature">
+                        <h5 class="slot-title">Nature</h5>
+                        <p>Mild (+SA, -SD)</p>
+                    </div>
+
+                    <div class="slot-effort-values">
+                        <h5 class="slot-title">Effort Values</h5>
+                        <p>4 HP / 252 SA / 252 S</p>
+                    </div>
+
+                    <div class="slot-moves-item">
+                        <div class="cell-moves">
+                            <h5 class="slot-title">Moves</h5>
+                            <p class="text-electric">Volt Tackle</p>
+                            <p class="text-grass">Grass Knot</p>
+                            <p class="text-water">Surf</p>
+                            <p class="text-electric">Volt Switch</p>
+                        </div>
+                        <div class="cell-item">
+                            <h5 class="slot-title">Item</h5>
+                            <img src="./assets/images/items/light-ball.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="team-slot">
+                    <h3 class="slot-name">Venusaur</h3>
+                    <h4 class="slot-role">Bulky Physical Attacker</h4>
+                    <div class="pokemon-images">
+                        <div class="cell-image">
+                            <img src="./assets/images/pokemon/venusaur.gif" height="120px">
+                            <p class="cell-types"><strong><span class="text-grass">Grass</span>/<span class="text-poison">Poison</span></strong></p>
+                            <p class="cell-ability">Overgrow</p>
+                        </div>
+                    </div>
+
+                    <div class="slot-nature">
+                        <h5 class="slot-title">Nature</h5>
+                        <p>Adamant (+A, -SA)</p>
+                    </div>
+
+                    <div class="slot-effort-values">
+                        <h5 class="slot-title">Effort Values</h5>
+                        <p>252 HP / 252 A / 4 S</p>
+                    </div>
+
+                    <div class="slot-moves-item">
+                        <div class="cell-moves">
+                            <h5 class="slot-title">Moves</h5>
+                            <p class="text-electric">Swords Dance</p>
+                            <p class="text-grass">Petal Blizzard</p>
+                            <p class="text-ground">Earthquake</p>
+                            <p class="text-dragon">Outrage</p>
+                        </div>
+                        <div class="cell-item">
+                            <h5 class="slot-title">Item</h5>
+                            <img src="./assets/images/items/life-orb.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="team-slot">
+                    <h3 class="slot-name">Charizard</h3>
+                    <h4 class="slot-role">Special Sweeper</h4>
+                    <div class="pokemon-images">
+                        <div class="cell-image">
+                            <img src="./assets/images/pokemon/charizard.gif" height="120px">
+                            <p class="cell-types"><strong><span class="text-fire">Fire</span>/<span class="text-flying">Flying</span></strong></p>
+                            <p class="cell-ability">Blaze</p>
+                        </div>
+                        <div class="cell-arrow text-secondary">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </div>
+                        <div class="cell-image-mega">
+                            <img src="./assets/images/pokemon/charizard_mega_y.gif" height="120px">
+                            <p class="cell-types"><strong><span class="text-fire">Fire</span>/<span class="text-flying">Flying</span></strong></p>
+                            <p class="cell-ability">Drought</p>
+                        </div>
+                    </div>
+
+                    <div class="slot-nature">
+                        <h5 class="slot-title">Nature</h5>
+                        <p>Timid (+S, -A)</p>
+                    </div>
+
+                    <div class="slot-effort-values">
+                        <h5 class="slot-title">Effort Values</h5>
+                        <p>4 HP / 252 SA / 252 S</p>
+                    </div>
+
+                    <div class="slot-moves-item">
+                        <div class="cell-moves">
+                            <h5 class="slot-title">Moves</h5>
+                            <p class="text-fire">Fire Blast</p>
+                            <p class="text-grass">Solar Beam</p>
+                            <p class="text-flying">Air Slash</p>
+                            <p class="text-fighting">Focus Blast</p>
+                        </div>
+                        <div class="cell-item">
+                            <h5 class="slot-title">Item</h5>
+                            <img src="./assets/images/items/charizardite-y.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="team-slot">
+                    <h3 class="slot-name">Blastoise</h3>
+                    <h4 class="slot-role">Support</h4>
+                    <div class="pokemon-images">
+                        <div class="cell-image">
+                            <img src="./assets/images/pokemon/blastoise.gif" height="120px">
+                            <p class="cell-types"><strong><span class="text-water">Water</span></strong></p>
+                            <p class="cell-ability">Torrent</p>
+                        </div>
+                    </div>
+
+                    <div class="slot-nature">
+                        <h5 class="slot-title">Nature</h5>
+                        <p>Bold (+D, -A)</p>
+                    </div>
+
+                    <div class="slot-effort-values">
+                        <h5 class="slot-title">Effort Values</h5>
+                        <p>252 HP / 60 D / 196 S</p>
+                    </div>
+
+                    <div class="slot-moves-item">
+                        <div class="cell-moves">
+                            <h5 class="slot-title">Moves</h5>
+                            <p class="text-water">Scald</p>
+                            <p class="text-ice">Ice Beam</p>
+                            <p class="text-poison">Toxic</p>
+                            <p class="text-normal">Rapid Spin</p>
+                        </div>
+                        <div class="cell-item">
+                            <h5 class="slot-title">Item</h5>
+                            <img src="./assets/images/items/sitrus-berry.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="team-slot">
+                    <h3 class="slot-name">Clefable</h3>
+                    <h4 class="slot-role">Special Bulky Attacker</h4>
+                    <div class="pokemon-images">
+                        <div class="cell-image">
+                            <img src="./assets/images/pokemon/clefable.gif" height="120px">
+                            <p class="cell-types"><strong><span class="text-electric">Fairy</span></strong></p>
+                            <p class="cell-ability">Magic Guard</p>
+                        </div>
+                    </div>
+
+                    <div class="slot-nature">
+                        <h5 class="slot-title">Nature</h5>
+                        <p>Bold (=D, -A)</p>
+                    </div>
+
+                    <div class="slot-effort-values">
+                        <h5 class="slot-title">Effort Values</h5>
+                        <p>252 HP / 252 D / 4 SD</p>
+                    </div>
+
+                    <div class="slot-moves-item">
+                        <div class="cell-moves">
+                            <h5 class="slot-title">Moves</h5>
+                            <p class="text-psychic">Calm Mind</p>
+                            <p class="text-fairy">Moonblast</p>
+                            <p class="text-fighting">Focus Blast</p>
+                            <p class="text-poison">Toxic</p>
+                        </div>
+                        <div class="cell-item">
+                            <h5 class="slot-title">Item</h5>
+                            <img src="./assets/images/items/light-ball.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button type="button" class="top" onclick="window.location = '#app';">
         <i class="fas fa-chevron-up"></i>
     </button>
 </body>

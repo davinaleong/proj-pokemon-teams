@@ -1,15 +1,4 @@
-div#app {
-    display: grid;
-    grid-template-areas: 'aside main main main main';
-}
-
-aside {
-    grid-area: aside;
-    @extend .p-2;
-}
-
 main {
-    grid-area: main;
     @extend .p-2;
 }
 
@@ -25,7 +14,7 @@ main {
     height: 2rem;
 }
 
-.btn-search, .btn-home, .btn-top {
+button {
     display: inline-block;
     width: 2rem;
     height: 2rem;
@@ -34,20 +23,20 @@ main {
     border-radius: radius('tiny');
 }
 
-.btn-home {
+button:hover {
+    background-color: color('blue', 'dark');
+    cursor: pointer;
+}
+
+button.home {
     @extend .ml-2;
 }
 
-.btn-top {
+button.top {
     position: fixed;
-    right: 1rem;
-    bottom: 1rem;
+    right: spacer('2');
+    bottom: spacer('2');
     box-shadow: $box-shadow;
-}
-
-.btn-search:hover, .btn-home:hover, .btn-top:hover {
-    background-color: color('blue', 'dark');
-    cursor: pointer;
 }
 
 .team-item {
