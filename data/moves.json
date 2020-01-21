@@ -1,228 +1,228 @@
 [
     {
         "name": "Air Slash",
-        "typeId": "8"
+        "type": "Flying"
     }, {
         "name": "Bounce",
-        "typeId": "8"
+        "type": "Flying"
     }, {
         "name": "Brave Bird",
-        "typeId": "8"
+        "type": "Flying"
     }, {
         "name": "Bug Bite",
-        "typeId": "1"
+        "type": "Bug"
     }, {
         "name": "Bug Buzz",
-        "typeId": "1"
+        "type": "Bug"
     }, {
         "name": "Bulk Up",
-        "typeId": "6"
+        "type": "Fighting"
     }, {
         "name": "Bullet Punch",
-        "typeId": "17"
+        "type": "Steel"
     }, {
         "name": "Calm Mind",
-        "typeId": "15"
+        "type": "Psychic"
     }, {
         "name": "Crunch",
-        "typeId": "2"
+        "type": "Dark"
     }, {
         "name": "Dark Pulse",
-        "typeId": "2"
+        "type": "Dark"
     }, {
         "name": "Draco Meteor",
-        "typeId": "3"
+        "type": "Dragon"
     }, {
         "name": "Dragon Dance",
-        "typeId": "3"
+        "type": "Dragon"
     }, {
         "name": "Dragon Pulse",
-        "typeId": "3"
+        "type": "Dragon"
     }, {
         "name": "Dragon Rush",
-        "typeId": "3"
+        "type": "Dragon"
     }, {
         "name": "Drill Run",
-        "typeId": "11"
+        "type": "Ground"
     }, {
         "name": "Dual Chop",
-        "typeId": "3"
+        "type": "Dragon"
     }, {
         "name": "Earth Power",
-        "typeId": "11"
+        "type": "Ground"
     }, {
         "name": "Earthquake",
-        "typeId": "11"
+        "type": "Ground"
     }, {
         "name": "Energy Ball",
-        "typeId": "10"
+        "type": "Grass"
     }, {
         "name": "Fire Blast",
-        "typeId": "7"
+        "type": "Fire"
     }, {
         "name": "Flamethrower",
-        "typeId": "7"
+        "type": "Fire"
     }, {
         "name": "Flash Cannon",
-        "typeId": "17"
+        "type": "Steel"
     }, {
         "name": "Focus Blast",
-        "typeId": "6"
+        "type": "Fighting"
     }, {
         "name": "Giga Drain",
-        "typeId": "10"
+        "type": "Grass"
     }, {
         "name": "Grass Knot",
-        "typeId": "10"
+        "type": "Grass"
     }, {
         "name": "Gunk Shot",
-        "typeId": "14"
+        "type": "Poison"
     }, {
         "name": "Gyro Ball",
-        "typeId": "17"
+        "type": "Steel"
     }, {
         "name": "Haze",
-        "typeId": "12"
+        "type": "Ice"
     }, {
         "name": "Hydro Pump",
-        "typeId": "18"
+        "type": "Water"
     }, {
         "name": "Ice Beam",
-        "typeId": "12"
+        "type": "Ice"
     }, {
         "name": "Ice Shard",
-        "typeId": "12"
+        "type": "Ice"
     }, {
         "name": "Icicle Crash",
-        "typeId": "12"
+        "type": "Ice"
     }, {
         "name": "Infestation",
-        "typeId": "1"
+        "type": "Bug"
     }, {
         "name": "Iron Head",
-        "typeId": "17"
+        "type": "Steel"
     }, {
         "name": "Knock Off",
-        "typeId": "2"
+        "type": "Dark"
     }, {
         "name": "Leech Life",
-        "typeId": "1"
+        "type": "Bug"
     }, {
         "name": "Leech Seed",
-        "typeId": "10"
+        "type": "Grass"
     }, {
         "name": "Liquidation",
-        "typeId": "18"
+        "type": "Water"
     }, {
         "name": "Magma Storm",
-        "typeId": "7"
+        "type": "Fire"
     }, {
         "name": "Moonblast",
-        "typeId": "5"
+        "type": "Fairy"
     }, {
         "name": "Night Slash",
-        "typeId": "2"
+        "type": "Dark"
     }, {
         "name": "Outrage",
-        "typeId": "3"
+        "type": "Dragon"
     }, {
         "name": "Petal Blizzard",
-        "typeId": "2"
+        "type": "Dark"
     }, {
         "name": "Poison Jab",
-        "typeId": "14"
+        "type": "Poison"
     }, {
         "name": "Power Whip",
-        "typeId": "10"
+        "type": "Grass"
     }, {
         "name": "Pursuit",
-        "typeId": "2"
+        "type": "Dark"
     }, {
         "name": "Quiver Dance",
-        "typeId": "1"
+        "type": "Bug"
     }, {
         "name": "Rain Dance",
-        "typeId": "18"
+        "type": "Water"
     }, {
         "name": "Rapid Spin",
-        "typeId": "13"
+        "type": "Normal"
     }, {
         "name": "Refresh",
-        "typeId": "13"
+        "type": "Normal"
     }, {
         "name": "Rest",
-        "typeId": "15"
+        "type": "Psychic"
     }, {
         "name": "Roost",
-        "typeId": "8"
+        "type": "Flying"
     }, {
         "name": "Scald",
-        "typeId": "18"
+        "type": "Water"
     }, {
         "name": "Shadow Ball",
-        "typeId": "9"
+        "type": "Ghost"
     }, {
         "name": "Sleep Talk",
-        "typeId": "13"
+        "type": "Normal"
     }, {
         "name": "Sludge Bomb",
-        "typeId": "14"
+        "type": "Poison"
     }, {
         "name": "Solar Beam",
-        "typeId": "10"
+        "type": "Grass"
     }, {
         "name": "Spikes",
-        "typeId": "11"
+        "type": "Ground"
     }, {
         "name": "Stealth Rocks",
-        "typeId": "16"
+        "type": "Rock"
     }, {
         "name": "Steel Wing",
-        "typeId": "17"
+        "type": "Steel"
     }, {
         "name": "Stone Edge",
-        "typeId": "16"
+        "type": "Rock"
     }, {
         "name": "Stored Power",
-        "typeId": "15"
+        "type": "Psychic"
     }, {
         "name": "Sucker Punch",
-        "typeId": "2"
+        "type": "Dark"
     }, {
         "name": "Superpower",
-        "typeId": "6"
+        "type": "Fighting"
     }, {
         "name": "Surf",
-        "typeId": "18"
+        "type": "Water"
     }, {
         "name": "Swords Dance",
-        "typeId": "13"
+        "type": "Normal"
     }, {
         "name": "Thunder",
-        "typeId": "4"
+        "type": "Electric"
     }, {
         "name": "Thunderbolt",
-        "typeId": "4"
+        "type": "Electric"
     }, {
         "name": "Toxic",
-        "typeId": "14"
+        "type": "Poison"
     }, {
         "name": "U-Turn",
-        "typeId": "1"
+        "type": "Bug"
     }, {
         "name": "Volt Switch",
-        "typeId": "4"
+        "type": "Electric"
     }, {
         "name": "Volt Tackle",
-        "typeId": "4"
+        "type": "Electric"
     }, {
         "name": "Water Shuriken",
-        "typeId": "18"
+        "type": "Water"
     }, {
         "name": "Will-O-Wisp",
-        "typeId": "7"
+        "type": "Fire"
     }, {
         "name": "X-Scissor",
-        "typeId": "1"
+        "type": "Bug"
     }
 ]
