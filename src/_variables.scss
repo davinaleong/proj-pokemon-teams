@@ -170,25 +170,85 @@ $radii: (
     @return $radius;
 }
 
+$darken-amount: 15%;
 $types: (
-    'bug': #a8b821,
-    'dark': #6f5848,
-    'dragon': #7038f9,
-    'electric': #f8d030,
-    'fairy': #ffaec9,
-    'fighting': #c03028,
-    'fire': #f07f2f,
-    'flying': #a890f0,
-    'ghost': #715899,
-    'grass': #78c750,
-    'ground': #debf67,
-    'ice': #98d8d8,
-    'normal': #a9a878,
-    'poison': #a040a1,
-    'psychic': #f85788,
-    'rock': #b89f38,
-    'steel': #b8b8d0,
-    'water': #6890f0
+    'bug': (
+        "color": #a8b821,
+        "font": #000
+    ),
+    'dark': (
+        "color": #6f5848,
+        "font": #fff
+    ),
+    'dragon': (
+        "color": #7038f9,
+        "font": #fff
+    ),
+    'electric': (
+        "color": #f8d030,
+        "font": #000
+    ),
+    'fairy': (
+        "color": #ffaec9,
+        "font": #000
+    ),
+    'fighting': (
+        "color": #c03028,
+        "font": #fff
+    ),
+    'fire': (
+        "color": #f07f2f,
+        "font": #000
+    ),
+    'flying': (
+        "color": #a890f0,
+        "font": #000
+    ),
+    'ghost': (
+        "color": #715899,
+        "font": #fff
+    ),
+    'grass': (
+        "color": #78c750,
+        "font": #000
+    ),
+    'ground': (
+        "color": #debf67,
+        "font": #000
+    ),
+    'ice': (
+        "color": #98d8d8,
+        "font": #000
+    ),
+    'normal': (
+        "color": #a9a878,
+        "font": #000
+    ),
+    'poison': (
+        "color": #a040a1,
+        "font": #fff
+    ),
+    'psychic': (
+        "color": #f85788,
+        "font": #fff
+    ),
+    'rock': (
+        "color": #b89f38,
+        "font": #fff
+    ),
+    'steel': (
+        "color": #b8b8d0,
+        "font": #000
+    ),
+    'water': (
+        "color": #6890f0,
+        "font": #000
+    )
 );
+@function type($type, $tint) {
+    $map: map-get($types, $type);
+    $col: map-get($map, $tint);
+    @return $col;
+}
 
 $box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.2);

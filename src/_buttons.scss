@@ -1,6 +1,6 @@
 button {
     display: inline-block;
-    color: color('white', 'base');
+    color: color('blue', 'font');
     background-color: color('blue', 'base');
     border-radius: radius('tiny');
     box-shadow: $box-shadow;
@@ -12,6 +12,19 @@ button:hover {
     cursor: pointer;
 }
 
+@each $key, $color in $colors {
+    @if $key != 'black' and $key != 'white' and $key != 'gray' and $key != 'blue' {
+        button.bg-#{$key} {
+            color: color($key, 'font');
+            background-color: color($key, 'base');
+        }
+
+        button.bg-#{$key}:hover {
+            background-color: color($key, 'dark');
+        }
+    }
+}
+
 button.top {
     position: fixed;
     right: spacer('2');
@@ -19,4 +32,15 @@ button.top {
     display: block;
     width: 2rem;
     height: 2rem;
+}
+
+@each $key, $type in $types {
+    button.bg-#{$key} {
+        color: type($key, 'font');
+        background-color: type($key, 'color');
+    }
+
+    button.bg-#{$key}:hover {
+        background-color: darken(type($key, 'color'), $darken-amount);
+    }
 }

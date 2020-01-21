@@ -87,14 +87,14 @@ code, .text-code {
 
 @each $key, $type in $types {
     .text-#{$key} {
-        color: $type;
+        color: type($key, 'color');
     }
 
     a.text-#{$key} {
-        color: $type;
+        color: type($key, 'color');
     }
 
     a.text-#{$key}:hover {
-        color: darken($type, 20%);
+        color: darken(type($key, 'color'), $darken-amount);
     }
 }
