@@ -1,0 +1,20 @@
+ul.breadcrumb {
+    padding: spacer('medium');
+    list-style: none;
+    font-family: font('heading');
+    background-color: color('white', 'base');
+    border-radius: val(--border-radius-medium);
+    box-shadow: $box-shadow;
+    margin-bottom: spacer('large');
+}
+
+ul.breadcrumb li {
+    display: inline;
+    color: color('gray', 'base');
+}
+
+ul.breadcrumb li+li:before {
+    padding: spacer('tiny');
+    content: '/\00a0';
+    color: color('black', 'base');
+}

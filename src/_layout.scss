@@ -1,0 +1,212 @@
+div#app {
+    display: grid;
+    grid-template-areas: 'aside main main main main';
+}
+
+aside {
+    grid-area: aside;
+    padding: spacer('medium');
+}
+
+main {
+    grid-area: main;
+    padding: spacer('medium');
+}
+
+.container-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.field-search {
+    display: inline-block;
+    width: 30rem;
+    height: 2rem;
+}
+
+.btn-search, .btn-home, .btn-top {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    color: color('white', 'base');
+    background-color: color('blue', 'base');
+    border-radius: spacer('tiny');
+}
+
+.btn-home {
+    margin-left: spacer('medium');
+}
+
+.btn-top {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    box-shadow: $box-shadow;
+}
+
+.btn-search:hover, .btn-home:hover, .btn-top:hover {
+    background-color: color('blue', 'dark');
+    cursor: pointer;
+}
+
+.team-item {
+    padding: spacer('medium');
+    display: grid;
+    grid-template-areas: 'item-title item-gen item-rating';
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item-title {
+    grid-area: item-title;
+}
+
+.item-gen {
+    grid-area: item-gen;
+    text-align: center;
+}
+
+.item-rating {
+    grid-area: item-rating;
+    text-align: right;
+}
+
+.container-gens {
+    margin-bottom: spacer('large');
+}
+
+.gens-title {
+    font-size: font-size('h3');
+}
+
+.container-gens-cards {
+    display: flex;
+}
+
+.team-card {
+    padding: spacer('large');
+    margin-right: spacer('medium');
+    margin-bottom: spacer('medium');
+    background: color('white', 'base');
+    box-shadow: $box-shadow;
+    display: grid;
+    grid-template-areas: 
+        'card-title card-title card-title card-title card-gen card-gen'
+        'card-pokemon card-pokemon card-pokemon card-pokemon card-pokemon card-pokemon'
+        'card-rating card-rating card-rating card-rating card-rating card-rating'
+    ;
+    border-radius: spacer('small');
+}
+
+.card-title {
+    grid-area: card-title;
+    font-size: font-size('h5');
+}
+
+.card-gen {
+    grid-area: card-gen;
+    font-size: font-size('h5');
+    text-align: right;
+}
+
+.card-pokemon {
+    grid-area: card-pokemon;
+}
+
+.card-rating {
+    grid-area: card-rating;
+}
+
+.pokemon-icon {
+    display: inline-block;
+    padding: spacer('small');
+}
+
+.team-subcontent {
+    display: flex;
+}
+
+.slot-gen {
+    margin-right: spacer('medium');
+}
+
+.container-team-slots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.team-slot {
+    padding: spacer('large');
+    margin-right: spacer('medium');
+    margin-bottom: spacer('medium');
+    background: white;
+    box-shadow: $box-shadow;
+    border-radius: var(--border-radius-small);
+}
+
+.slot-name {
+    font-size: font-size('h3');
+}
+
+.slot-role {
+    font-size: font-size('h5');
+}
+
+.pokemon-images {
+    display: grid;
+    grid-template-areas:
+        'cell-image cell-arrow cell-image-mega';
+    margin-bottom: spacer('large');
+}
+
+.cell-image {
+    grid-area: cell-image;
+    margin-bottom: spacer('medium');
+}
+
+.cell-arrow {
+    grid-area: cell-arrow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell-image-mega {
+    grid-area: cell-image-mega;
+}
+
+.cell-types {
+    margin-bottom: spacer('small');
+}
+
+.slot-nature, .slot-effort-values, .slot-individual-values {
+    margin-bottom: spacer('medium');
+}
+
+.slot-title {
+    font-size: font-size('slot-title');
+    color: #9e9e9e;
+    margin-bottom: spacer('small');
+}
+
+.slot-moves-item {
+    display: grid;
+    grid-template-areas:
+        'cell-moves cell-moves cell-item';
+    margin-top: spacer('large');
+}
+
+.cell-moves {
+    grid-area: cell-moves;
+}
+
+.cell-moves p {
+    margin-bottom: spacer('small');
+}
+
+.cell-item {
+    grid-area: cell-item;
+}
