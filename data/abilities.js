@@ -1,4 +1,4 @@
-[
+const abilities = [
     {
         "name": "Blaze"
     }, {
@@ -14,4 +14,6 @@
     }, {
         "name": "Unnerve"
     }
-]
+];
+
+export default abilities;

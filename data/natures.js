@@ -1,4 +1,4 @@
-[
+const natures = [
     {
         "name": "Adamant",
         "positiveStat": "",
@@ -100,4 +100,6 @@
         "positiveStat": "",
         "negativeStat": ""
     }
-]
+];
+
+export default natures;

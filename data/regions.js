@@ -1,4 +1,4 @@
-[
+const regions = [
     {
         "name": "Kanto"
     }, {
@@ -14,4 +14,6 @@
     }, {
         "name": "Alola"
     }
-]
+];
+
+export default regions;

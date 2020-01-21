@@ -1,4 +1,4 @@
-[
+const stats = [
     {
         "name": "Attack",
         "acronym": "A"
@@ -18,4 +18,6 @@
         "name": "Speed",
         "acronym": "S"
     }
-]
+];
+
+export default stats;

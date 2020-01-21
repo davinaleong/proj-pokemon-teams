@@ -1,4 +1,4 @@
-[
+const types = [
     {
         "name": "Bug",
         "color": "#A8B821"
@@ -55,3 +55,5 @@
         "color": "#6890F0"
     }
 ]
+
+export default types;

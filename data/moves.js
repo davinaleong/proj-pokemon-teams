@@ -1,4 +1,4 @@
-[
+const moves = [
     {
         "name": "Air Slash",
         "type": "Flying"
@@ -225,4 +225,6 @@
         "name": "X-Scissor",
         "type": "Bug"
     }
-]
+];
+
+export default moves;
