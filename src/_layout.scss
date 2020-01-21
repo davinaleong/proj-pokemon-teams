@@ -5,12 +5,12 @@ div#app {
 
 aside {
     grid-area: aside;
-    padding: spacer('medium');
+    @extend .p-2;
 }
 
 main {
     grid-area: main;
-    padding: spacer('medium');
+    @extend .p-2;
 }
 
 .container-search {
@@ -31,11 +31,11 @@ main {
     height: 2rem;
     color: color('white', 'base');
     background-color: color('blue', 'base');
-    border-radius: spacer('tiny');
+    border-radius: radius('tiny');
 }
 
 .btn-home {
-    margin-left: spacer('medium');
+    @extend .ml-2;
 }
 
 .btn-top {
@@ -51,7 +51,7 @@ main {
 }
 
 .team-item {
-    padding: spacer('medium');
+    @extend .p-2;
     display: grid;
     grid-template-areas: 'item-title item-gen item-rating';
     grid-template-columns: repeat(3, 1fr);
@@ -72,11 +72,11 @@ main {
 }
 
 .container-gens {
-    margin-bottom: spacer('large');
+    @extend .mb-3;
 }
 
 .gens-title {
-    font-size: font-size('h3');
+    font-size: size('xx-large');
 }
 
 .container-gens-cards {
@@ -84,9 +84,9 @@ main {
 }
 
 .team-card {
-    padding: spacer('large');
-    margin-right: spacer('medium');
-    margin-bottom: spacer('medium');
+    @extend .p-3;
+    @extend .mr-2;
+    @extend .mb-2;
     background: color('white', 'base');
     box-shadow: $box-shadow;
     display: grid;
@@ -95,17 +95,17 @@ main {
         'card-pokemon card-pokemon card-pokemon card-pokemon card-pokemon card-pokemon'
         'card-rating card-rating card-rating card-rating card-rating card-rating'
     ;
-    border-radius: spacer('small');
+    border-radius: radius('tiny');
 }
 
 .card-title {
     grid-area: card-title;
-    font-size: font-size('h5');
+    font-size: size('large');
 }
 
 .card-gen {
     grid-area: card-gen;
-    font-size: font-size('h5');
+    font-size: size('large');
     text-align: right;
 }
 
@@ -119,7 +119,7 @@ main {
 
 .pokemon-icon {
     display: inline-block;
-    padding: spacer('small');
+    @extend .p-1;
 }
 
 .team-subcontent {
@@ -127,7 +127,7 @@ main {
 }
 
 .slot-gen {
-    margin-right: spacer('medium');
+    @extend .mr-2;
 }
 
 .container-team-slots {
@@ -139,32 +139,32 @@ main {
 }
 
 .team-slot {
-    padding: spacer('large');
-    margin-right: spacer('medium');
-    margin-bottom: spacer('medium');
-    background: white;
+    @extend .p-3;
+    @extend .mr-2;
+    @extend .mb-2;
+    background: color('white', 'base');
     box-shadow: $box-shadow;
-    border-radius: var(--border-radius-small);
+    border-radius: radius('tiny');
 }
 
 .slot-name {
-    font-size: font-size('h3');
+    font-size: size('heading');
 }
 
 .slot-role {
-    font-size: font-size('h5');
+    font-size: size('large');
 }
 
 .pokemon-images {
     display: grid;
     grid-template-areas:
         'cell-image cell-arrow cell-image-mega';
-    margin-bottom: spacer('large');
+    @extend .mb-3;
 }
 
 .cell-image {
     grid-area: cell-image;
-    margin-bottom: spacer('medium');
+    @extend .mb-2;
 }
 
 .cell-arrow {
@@ -179,24 +179,24 @@ main {
 }
 
 .cell-types {
-    margin-bottom: spacer('small');
+    @extend .mb-2;
 }
 
 .slot-nature, .slot-effort-values, .slot-individual-values {
-    margin-bottom: spacer('medium');
+    @extend .mb-3;
 }
 
 .slot-title {
-    font-size: font-size('slot-title');
-    color: #9e9e9e;
-    margin-bottom: spacer('small');
+    font-size: size('small');
+    color: color('gray', '500');
+    @extend .mb-2;
 }
 
 .slot-moves-item {
     display: grid;
     grid-template-areas:
         'cell-moves cell-moves cell-item';
-    margin-top: spacer('large');
+    @extend .mt-3;
 }
 
 .cell-moves {
@@ -204,7 +204,7 @@ main {
 }
 
 .cell-moves p {
-    margin-bottom: spacer('small');
+    @extend .mb-2;
 }
 
 .cell-item {

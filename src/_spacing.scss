@@ -1,0 +1,64 @@
+/* Spacers */
+@each $key, $spacer in $spacers {
+    // Margins
+    .m-#{$key} {
+        margin: $spacer;
+    }
+
+    .mx-#{$key} {
+        margin-left: $spacer;
+        margin-right: $spacer;
+    }
+
+    .my-#{$key} {
+        margin-top: $spacer;
+        margin-bottom: $spacer;
+    }
+
+    .mt-#{$key} {
+        margin-top: $spacer;
+    }
+
+    .mr-#{$key} {
+        margin-right: $spacer;
+    }
+
+    .mb-#{$key} {
+        margin-bottom: $spacer;
+    }
+
+    .ml-#{$key} {
+        margin-left: $spacer;
+    }
+
+    // Paddings
+    .p-#{$key} {
+        padding: $spacer;
+    }
+
+    .px-#{$key} {
+        padding-left: $spacer;
+        padding-right: $spacer;
+    }
+
+    .py-#{$key} {
+        padding-top: $spacer;
+        padding-bottom: $spacer;
+    }
+
+    .pt-#{$key} {
+        padding-top: $spacer;
+    }
+
+    .pr-#{$key} {
+        padding-right: $spacer;
+    }
+
+    .pb-#{$key} {
+        padding-bottom: $spacer;
+    }
+
+    .pl-#{$key} {
+        padding-left: $spacer;
+    }
+}

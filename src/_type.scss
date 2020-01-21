@@ -41,12 +41,19 @@ code, .text-code {
     }
 }
 
+@each $key, $alignment in $alignments {
+    .text-#{$alignment} {
+        text-align: $alignment;
+    }
+}
+
 @each $key, $color in $colors {
     .text-#{$key} {
         color: map-get($color, 'base');
     }
 
     .bg-#{$key} {
+        color: map-get($color, 'font');
         background-color: map-get($color, 'base');
     }
 }

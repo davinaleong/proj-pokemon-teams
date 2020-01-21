@@ -10,8 +10,9 @@
 
 html, body {
     font-size: $base-size;
-    font-family: font('body');
-    background: color('gray', 'lighter');
+    font-family: family('body');
+    color: color('gray', '900');
+    background: color('gray', '100');
 }
 
 img {

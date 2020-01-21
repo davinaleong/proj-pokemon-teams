@@ -1,20 +1,20 @@
 ul.breadcrumb {
-    padding: spacer('medium');
+    @extend .p-2;
     list-style: none;
     font-family: font('heading');
     background-color: color('white', 'base');
     border-radius: val(--border-radius-medium);
     box-shadow: $box-shadow;
-    margin-bottom: spacer('large');
+    @extend .mb-3;
 }
 
 ul.breadcrumb li {
     display: inline;
-    color: color('gray', 'base');
+    color: color('gray', '700');
 }
 
 ul.breadcrumb li+li:before {
-    padding: spacer('tiny');
+    @extend .p-1;
     content: '/\00a0';
     color: color('black', 'base');
 }
