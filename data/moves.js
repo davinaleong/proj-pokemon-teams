@@ -224,6 +224,60 @@ const moves = [
     }, {
         "name": "X-Scissor",
         "type": "Bug"
+    }, {
+        "name": "Hidden Power (Bug)",
+        "type": "Bug"
+    }, {
+        "name": "Hidden Power (Dark)",
+        "type": "Dark"
+    }, {
+        "name": "Hidden Power (Dragon)",
+        "type": "Dragon"
+    }, {
+        "name": "Hidden Power (Electric)",
+        "type": "Electric"
+    }, {
+        "name": "Hidden Power (Fairy)",
+        "type": "Fairy"
+    }, {
+        "name": "Hidden Power (Fighting)",
+        "type": "Fighting"
+    }, {
+        "name": "Hidden Power (Fire)",
+        "type": "Fire"
+    }, {
+        "name": "Hidden Power (Flying)",
+        "type": "Flying"
+    }, {
+        "name": "Hidden Power (Ghost)",
+        "type": "Ghost"
+    }, {
+        "name": "Hidden Power (Grass)",
+        "type": "Grass"
+    }, {
+        "name": "Hidden Power (Ground)",
+        "type": "Ground"
+    }, {
+        "name": "Hidden Power (Ice)",
+        "type": "Ice"
+    }, {
+        "name": "Hidden Power (Normal)",
+        "type": "Normal"
+    }, {
+        "name": "Hidden Power (Poison)",
+        "type": "Poison"
+    }, {
+        "name": "Hidden Power (Psychic)",
+        "type": "Psychic"
+    }, {
+        "name": "Hidden Power (Rock)",
+        "type": "Rock"
+    }, {
+        "name": "Hidden Power (Steel)",
+        "type": "Steel"
+    }, {
+        "name": "Hidden Power (Water)",
+        "type": "Water"
     }
 ];
 
