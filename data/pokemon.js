@@ -95,13 +95,63 @@ const pokemon = [
         "images": [
             "muk_alola.gif",
             "muk_alola.png"
-        ]
+        ],
+        "icon": "muk-icon.png"
     }, {
         "name": "Garchomp",
         "types": ["Dragon", "Ground"],
         "images": [
             "garchomp.gif",
             "garchomp.png"
+        ],
+        "icon": "garchomp-icon.png"
+    }, {
+        "name": "Magmortar",
+        "types": ["Fire"],
+        "images": [
+            "magmortar.gif",
+            "magmortar.png"
+        ],
+        "icon": "magmortar-icon.png"
+    }, {
+        "name": "Lucario",
+        "types": ["Fighting", "Steel"],
+        "images": [
+            "lucario.gif",
+            "lucario.png"
+        ],
+        "icon": "lucario-icon.png",
+        "megas": [
+            {
+                "name": "mega",
+                "types": ["Fighting", "Steel"],
+                "images": [
+                    "lucario_mega.gif",
+                    "lucario_mega.png"
+                ]
+            }
+        ]
+    }, {
+        "name": "Archeops",
+        "types": ["Rock", "Flying"],
+        "images": [
+            "archeops.gif",
+            "archeops.png"
+        ],
+        "icon": "archeops-icon.png"
+    }, {
+        "name": "Magnezone",
+        "types": ["Electric", "Steel"],
+        "images": [
+            "magnezone.gif",
+            "magnezone.png"
+        ]
+    }, {
+        "name": "Marowak (Alola)",
+        "types": ["Fire", "Ghost"],
+        "images": [
+            "marowak_alola.gif",
+            "marowak_alola.png"
         ]
     }
 ];
