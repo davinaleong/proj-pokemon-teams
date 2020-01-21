@@ -2,10 +2,10 @@
     "name": "Kanto-Region Team",
     "rating": "Unrated",
     "generation": 7,
-    "pokemon": [
+    "slots": [
         {
-            "name": "Aerodactyl",
-            "role": "Lead",
+            "name": "Lead",
+            "pokemon": "Aerodactyl",
             "mega": false,
             "form": "Base",
             "ability": "Unnerve",
@@ -19,8 +19,8 @@
                 ["Stone Edge", "Earthquake"]
             ]
         }, {
-            "name": "Pikachu",
-            "role": "Special Attacker",
+            "name": "Special Attacker",
+            "pokemon": "Pikachu",
             "mega": false,
             "form": "Base",
             "ability": "Lightning Rod",
@@ -34,8 +34,8 @@
                 ["Volt Switch"]
             ]
         }, {
-            "name": "Venusaur",
-            "role": "Bulky Physical Attacker",
+            "name": "Bulky Physical Attacker",
+            "pokemon": "Venusaur",
             "mega": false,
             "form": "Base",
             "ability": "Overgrow",
@@ -49,8 +49,8 @@
                 ["Outrage"]
             ]
         }, {
-            "name": "Blastoise",
-            "role": "Wall-breaker",
+            "name": "Wall-breaker",
+            "pokemon": "Blastoise",
             "mega": false,
             "form": "Base",
             "ability": "Torrent",
@@ -64,8 +64,8 @@
                 ["Refresh"]
             ]
         }, {
-            "name": "Charizard",
-            "role": "Special Sweeper",
+            "name": "Special Sweeper",
+            "pokemon": "Charizard",
             "mega": true,
             "form": "Base",
             "ability": "Blaze",
@@ -80,8 +80,8 @@
                 ["Roost"]
             ]
         }, {
-            "name": "Clefable",
-            "role": "Special Bulky Attacker",
+            "name": "Special Bulky Attacker",
+            "pokemon": "Clefable",
             "mega": false,
             "form": "Base",
             "ability": "Magic Guard",
