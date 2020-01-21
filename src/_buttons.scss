@@ -44,3 +44,37 @@ button.top {
         background-color: darken(type($key, 'color'), $darken-amount);
     }
 }
+
+button.link {
+    color: color('blue', 'base');
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    @extend .p-0;
+}
+
+button.link:hover {
+    color: color('blue', 'dark');
+}
+
+@each $key, $color in $colors {
+    @if $key != 'black' and $key != 'white' and $key != 'gray' and $key != 'blue' {
+        button.text-#{$key} {
+            color: color($key, 'base');
+        }
+
+        button.text-#{$key}:hover {
+            color: color($key, 'dark');
+        }
+    }
+}
+
+@each $key, $type in $types {
+    button.text-#{$key} {
+        color: type($key, 'color');
+    }
+
+    button.text-#{$key}:hover {
+        color: darken(type($key, 'color'), $darken-amount);
+    }
+}

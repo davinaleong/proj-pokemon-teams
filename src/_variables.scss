@@ -132,6 +132,7 @@ $alignments: (
 /// V.3.a Spacers
 $unit: 1rem;
 $spacers: (
+    '0': 0,
     '1': $unit * 0.25,
     '2': $unit * 0.5,
     '3': $unit * 1,
