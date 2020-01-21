@@ -6,12 +6,15 @@
         {
             "name": "Lead",
             "pokemon": "Aerodactyl",
-            "mega": false,
-            "form": "Base",
+            "mega": null,
             "ability": "Unnerve",
             "item": "Focus Sash",
             "nature": "Jolly",
-            "effortValues": "4 HP / 252 A / 252 S",
+            "effortValues": [
+                "4 HP",
+                "252 A",
+                "252 S"
+            ],
             "moves": [
                 ["Stealth Rocks"],
                 ["Toxic"],
@@ -21,12 +24,15 @@
         }, {
             "name": "Special Attacker",
             "pokemon": "Pikachu",
-            "mega": false,
-            "form": "Base",
+            "mega": null,
             "ability": "Lightning Rod",
             "item": "Light Ball",
             "nature": "Mild",
-            "effortValues": "A 4 / 252 SA / 252 S",
+            "effortValues": [
+                "A 4",
+                "252 SA",
+                "252 S"
+            ],
             "moves": [
                 ["Volt Tacklet"],
                 ["Grass Knot"],
@@ -36,12 +42,15 @@
         }, {
             "name": "Bulky Physical Attacker",
             "pokemon": "Venusaur",
-            "mega": false,
-            "form": "Base",
+            "mega": null,
             "ability": "Overgrow",
             "item": "Life Orb",
             "nature": "Adamant",
-            "effortValues": "252 HP / 252 A / 4 S",
+            "effortValues": [
+                "252 HP",
+                "252 A",
+                "4 S"
+            ],
             "moves": [
                 ["Swords Dance"],
                 ["Petal Blizzard"],
@@ -51,12 +60,15 @@
         }, {
             "name": "Wall-breaker",
             "pokemon": "Blastoise",
-            "mega": false,
-            "form": "Base",
+            "mega": null,
             "ability": "Torrent",
             "item": "Leftovers",
             "nature": "Bold",
-            "effortValues": "252 HP / 60 D / 196 S",
+            "effortValues": [
+                "252 HP",
+                "60 D",
+                "196 S"
+            ],
             "moves": [
                 ["Scald"],
                 ["Rapid Spin", "Toxic"],
@@ -67,12 +79,15 @@
             "name": "Special Sweeper",
             "pokemon": "Charizard",
             "mega": true,
-            "form": "Base",
             "ability": "Blaze",
             "abilityMega": "Drought",
             "item": "Charizardite Y",
             "nature": "Timid",
-            "effortValues": "4 D / 252 SA / 252 S",
+            "effortValues": [
+                "4 D",
+                "252 SA",
+                "252 S"
+            ],
             "moves": [
                 ["Flamethrower"],
                 ["Solar Beam"],
@@ -82,12 +97,15 @@
         }, {
             "name": "Special Bulky Attacker",
             "pokemon": "Clefable",
-            "mega": false,
-            "form": "Base",
+            "mega": null,
             "ability": "Magic Guard",
             "item": "Sitrus Berry",
             "nature": "Bold",
-            "effortValues": "252 HP / 252 D / 4 SD",
+            "effortValues": [
+                "252 HP",
+                "252 D",
+                "4 SD"
+            ],
             "moves": [
                 ["Calm Mind"],
                 ["Moonblast"],

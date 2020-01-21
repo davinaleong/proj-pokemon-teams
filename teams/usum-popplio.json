@@ -1,0 +1,119 @@
+{
+    "name": "USUM: Starter, Popplio",
+    "rating": "Unrated",
+    "generation": "7",
+    "slots": [
+        {
+            "name": "Special Sweeper #1",
+            "pokemon": "Primarina",
+            "mega": null,
+            "ability": "Torrent",
+            "item": "Choice Specs",
+            "nature": "Modest",
+            "effortValues": [
+                "136 HP",
+                "252 SA",
+                "120 S"
+            ],
+            "moves": [
+                ["Hydro Pump"],
+                ["Moonblast", "Dazzling Gleam"],
+                ["Ice Beam"],
+                ["Energy Ball"]
+            ]
+        }, {
+            "name": "Special Attacker",
+            "pokemon": "Magnezone",
+            "mega": null,
+            "ability": "Magnet Pull",
+            "item": "Assault Vest",
+            "nature": "Modest",
+            "effortValues": [
+                "200 HP",
+                "252 SA",
+                "52 SD"
+            ],
+            "moves": [
+                ["Thunderbolt"],
+                ["Flash Cannon"],
+                ["Hidden Power (Grass)"],
+                ["Volt Switch"]
+            ]
+        }, {
+            "name": "Physical Sweeper #1",
+            "pokemon": "Garchomp",
+            "mega": null,
+            "ability": "Rough Skin",
+            "item": "Life Orb",
+            "nature": "Naive",
+            "effortValues": [
+                "4 HP",
+                "252 SA",
+                "252 S"
+            ],
+            "moves": [
+                ["Earthquake"],
+                ["Outrage", "Dragon Claw"],
+                ["Fire Blast"],
+                ["Swords Dance"]
+            ]
+        }, {
+            "name": "Grass Counter",
+            "pokemon": "Marowak (Alolan)",
+            "mega": null,
+            "ability": "Rock Head",
+            "item": "Thick Club",
+            "nature": "Adamant",
+            "effortValues": [
+                "252 A",
+                "4 D",
+                "252 S"
+            ],
+            "moves": [
+                ["Flare Blitz"],
+                ["Shadow Bone"],
+                ["Bonemrang"],
+                ["Stealth Rock"]
+            ]
+        }, {
+            "name": "Special Sweeper #1",
+            "pokemon": "Lucario",
+            "mega": {
+                "name": "mega",
+                "ability": "Adaptability"
+            },
+            "ability": "Rough Skin",
+            "item": "Lucarionite",
+            "nature": "Timid",
+            "effortValues": [
+                "4 D",
+                "252 SA",
+                "252 S"
+            ],
+            "moves": [
+                ["Aura Sphere"],
+                ["Flash Cannon"],
+                ["Shadow Ball"],
+                ["Extreme Speed"]
+            ]
+        }, {
+            "name": "Physical Attacker #2",
+            "pokemon": "Dhelmise",
+            "mega": null,
+            "ability": "Steelworker",
+            "item": "Choice Band",
+            "nature": "Adamant",
+            "effortValues": [
+                "172 HP",
+                "252 A",
+                "84 S"
+            ],
+            "moves": [
+                ["Power Whip"],
+                ["Phantom Force", "Shadow Claw"],
+                ["Anchor Shot"],
+                ["Rapid Spin"]
+            ]
+        }
+    ]
+}

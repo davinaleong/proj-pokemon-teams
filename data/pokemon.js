@@ -74,7 +74,7 @@ const pokemon = [
         ],
         "icon": "raichu-icon.png",
     }, {
-        "name": "Raichu (Alola)",
+        "name": "Raichu (Alolan)",
         "types": ["Electric", "Psychic"],
         "images": [
             "raichu_alola.gif",
@@ -90,7 +90,7 @@ const pokemon = [
         ],
         "icon": "primarina.png"
     }, {
-        "name": "Muk (Alola)",
+        "name": "Muk (Alolan)",
         "types": ["Poison", "Dark"],
         "images": [
             "muk_alola.gif",
@@ -148,7 +148,7 @@ const pokemon = [
         ],
         "icon": "magnezone-icon.png"
     }, {
-        "name": "Marowak (Alola)",
+        "name": "Marowak (Alolan)",
         "types": ["Fire", "Ghost"],
         "images": [
             "marowak_alola.gif",
