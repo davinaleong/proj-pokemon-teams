@@ -145,14 +145,24 @@ const pokemon = [
         "images": [
             "magnezone.gif",
             "magnezone.png"
-        ]
+        ],
+        "icon": "magnezone-icon.png"
     }, {
         "name": "Marowak (Alola)",
         "types": ["Fire", "Ghost"],
         "images": [
             "marowak_alola.gif",
             "marowak_alola.png"
-        ]
+        ],
+        "icon": "marowak_alola-icon.png"
+    }, {
+        "name": "Dhelmise",
+        "types": ["Grass", "Ghost"],
+        "images": [
+            "dhelmise.gif",
+            "dhelmise.png"
+        ],
+        "icon": "dhelmise-icon.png"
     }
 ];
 
