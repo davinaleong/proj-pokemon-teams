@@ -89,4 +89,12 @@ code, .text-code {
     .text-#{$key} {
         color: $type;
     }
+
+    a.text-#{$key} {
+        color: $type;
+    }
+
+    a.text-#{$key}:hover {
+        color: darken($type, 20%);
+    }
 }

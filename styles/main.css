@@ -201,72 +201,216 @@ code, .text-code {
   color: #a8b821;
 }
 
+a.text-bug {
+  color: #a8b821;
+}
+
+a.text-bug:hover {
+  color: #596211;
+}
+
 .text-dark {
   color: #6f5848;
+}
+
+a.text-dark {
+  color: #6f5848;
+}
+
+a.text-dark:hover {
+  color: #312720;
 }
 
 .text-dragon {
   color: #7038f9;
 }
 
+a.text-dragon {
+  color: #7038f9;
+}
+
+a.text-dragon:hover {
+  color: #3d06c5;
+}
+
 .text-electric {
   color: #f8d030;
+}
+
+a.text-electric {
+  color: #f8d030;
+}
+
+a.text-electric:hover {
+  color: #bc9706;
 }
 
 .text-fairy {
   color: #ffaec9;
 }
 
+a.text-fairy {
+  color: #ffaec9;
+}
+
+a.text-fairy:hover {
+  color: #ff4885;
+}
+
 .text-fighting {
   color: #c03028;
+}
+
+a.text-fighting {
+  color: #c03028;
+}
+
+a.text-fighting:hover {
+  color: #6c1b16;
 }
 
 .text-fire {
   color: #f07f2f;
 }
 
+a.text-fire {
+  color: #f07f2f;
+}
+
+a.text-fire:hover {
+  color: #ad4f0c;
+}
+
 .text-flying {
   color: #a890f0;
+}
+
+a.text-flying {
+  color: #a890f0;
+}
+
+a.text-flying:hover {
+  color: #6236e4;
 }
 
 .text-ghost {
   color: #715899;
 }
 
+a.text-ghost {
+  color: #715899;
+}
+
+a.text-ghost:hover {
+  color: #413358;
+}
+
 .text-grass {
   color: #78c750;
+}
+
+a.text-grass {
+  color: #78c750;
+}
+
+a.text-grass:hover {
+  color: #4a862b;
 }
 
 .text-ground {
   color: #debf67;
 }
 
+a.text-ground {
+  color: #debf67;
+}
+
+a.text-ground:hover {
+  color: #b79228;
+}
+
 .text-ice {
   color: #98d8d8;
+}
+
+a.text-ice {
+  color: #98d8d8;
+}
+
+a.text-ice:hover {
+  color: #4ebcbc;
 }
 
 .text-normal {
   color: #a9a878;
 }
 
+a.text-normal {
+  color: #a9a878;
+}
+
+a.text-normal:hover {
+  color: #727149;
+}
+
 .text-poison {
   color: #a040a1;
+}
+
+a.text-poison {
+  color: #a040a1;
+}
+
+a.text-poison:hover {
+  color: #572358;
 }
 
 .text-psychic {
   color: #f85788;
 }
 
+a.text-psychic {
+  color: #f85788;
+}
+
+a.text-psychic:hover {
+  color: #e0094b;
+}
+
 .text-rock {
   color: #b89f38;
+}
+
+a.text-rock {
+  color: #b89f38;
+}
+
+a.text-rock:hover {
+  color: #6a5b20;
 }
 
 .text-steel {
   color: #b8b8d0;
 }
 
+a.text-steel {
+  color: #b8b8d0;
+}
+
+a.text-steel:hover {
+  color: #7b7ba7;
+}
+
 .text-water {
   color: #6890f0;
+}
+
+a.text-water {
+  color: #6890f0;
+}
+
+a.text-water:hover {
+  color: #1650dc;
 }
 
 /* Spacers */
