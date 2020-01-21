@@ -3,8 +3,7 @@ Pokemon-Teams App
 
 ## Current TODO:
 
-1. Render styles for links in different colors
-2. Style buttons to look like links (`<a>)`
+1. Load Teams `JSON` files
 
 ## Tasks
 
