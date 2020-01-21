@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon Teams Template</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/png">
+</head>
+<body>
+    <div id="app">
+        <aside>
+            <h1>All Teams</h1>
+            <div class="container-search">
+                <form>
+                    <input type="text" class="field-search" placeholder="Search..." required>
+                    <button type="button" class="btn-search"><i class="fas fa-search"></i></button>
+                    <button type="button" class="btn-home" onclick="window.location = './index.html';"><i class="fas fa-home"></i></button>
+                </form>
+            </div>
+            <div class="container-team-list">
+                <div class="team-item">
+                    <h6 class="item-title"><a href="./team.html">Kanto Region</a></h6>
+                    <p class="item-gen">Gen 7</p>
+                    <div class="item-rating">
+                        <i class="fas fa-star text-amber"></i>
+                        <i class="fas fa-star text-amber"></i>
+                        <i class="fal fa-star text-yellow"></i>
+                        <i class="fal fa-star text-yellow"></i>
+                        <i class="fal fa-star text-yellow"></i>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <h6 class="item-title"><a href="./team.html">Levitate Ability</a></h6>
+                    <p class="item-gen">Gen 7</p>
+                    <div class="item-rating">
+                        <span class="text-muted">Unrated</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <ul class="breadcrumb">
+                <li>Home</li>
+            </ul>
+
+            <section class="container-gens">
+                <h2 class="gens-title">Gen 8</h2>
+
+                
+            </section>
+
+            <section class="container-gens">
+                <h2 class="gens-title">Gen 7</h2>
+
+                <div class="container-gens-cards">
+                    <div class="team-card">
+                        <h3 class="card-title"><a href="./team.html">Kanto Region</a></h3>
+                        <p class="card-gen text-secondary">Gen 7</p>
+                        <div class="card-pokemon">
+                            <img class="pokemon-icon" src="./assets/images/pokemon/icons/aerodactyl-icon.png">
+                            <img class="pokemon-icon" src="./assets/images/pokemon/icons/pikachu-icon.png">
+                            <img class="pokemon-icon" src="./assets/images/pokemon/icons/venusaur-icon.png">
+                            <img class="pokemon-icon" src="./assets/images/pokemon/icons/charizard-icon.png">
+                            <img class="pokemon-icon" src="./assets/images/pokemon/icons/blastoise-icon.png">
+                            <img class="pokemon-icon" src="./assets/images/pokemon/icons/clefable-icon.png">
+                        </div>
+                        <div class="card-rating">
+                            <i class="fas fa-star text-amber"></i>
+                            <i class="fas fa-star text-amber"></i>
+                            <i class="fal fa-star text-yellow"></i>
+                            <i class="fal fa-star text-yellow"></i>
+                            <i class="fal fa-star text-yellow"></i>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <h3 class="card-title"><a href="./team.html">Levitate Ability</a></h3>
+                        <p class="card-gen text-scondary">Gen 7</p>
+                        <div class="card-pokemon">
+                            <img class="pokemon-icon" src="./assets/images/pokemon/icons/bronzong-icon.png">
+                            <img class="pokemon-icon" src="./assets/images/pokemon/icons/rotom_wash-icon.png">
+                            <img class="pokemon-icon" src="./assets/images/pokemon/icons/latias-icon.png">
+                            <img class="pokemon-icon" src="./assets/images/pokemon/icons/flygon-icon.png">
+                            <img class="pokemon-icon" src="./assets/images/pokemon/icons/weezing-icon.png">
+                            <img class="pokemon-icon" src="./assets/images/pokemon/icons/hydreigon-icon.png">
+                        </div>
+                        <div class="card-rating">
+                            <span class="text-muted">Unrated</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <button type="button" class="btn-top" onclick="window.location = '#app';">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+</body>
+</html>
