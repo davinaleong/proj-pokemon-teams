@@ -81,6 +81,28 @@ const pokemon = [
             "raichu_alola.png"
         ],
         "icon": "raichu_alola.png"
+    }, {
+        "name": "Primarina",
+        "types": ["Water", "Fairy"],
+        "images": [
+            "primarina.gif",
+            "primarina.png"
+        ],
+        "icon": "primarina.png"
+    }, {
+        "name": "Muk (Alola)",
+        "types": ["Poison", "Dark"],
+        "images": [
+            "muk_alola.gif",
+            "muk_alola.png"
+        ]
+    }, {
+        "name": "Garchomp",
+        "types": ["Dragon", "Ground"],
+        "images": [
+            "garchomp.gif",
+            "garchomp.png"
+        ]
     }
 ];
 
