@@ -1,0 +1,7 @@
+header {
+    position: sticky;
+    top: 0;
+    background-color: color('gray', '100');
+    @extend .p-2;
+    box-shadow: $box-shadow;
+}

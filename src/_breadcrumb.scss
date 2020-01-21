@@ -2,19 +2,18 @@ ul.breadcrumb {
     @extend .p-2;
     list-style: none;
     font-family: font('heading');
-    background-color: color('white', 'base');
-    border-radius: val(--border-radius-medium);
-    box-shadow: $box-shadow;
+    background-color: color('gray', '300');
+    border-radius: radius('tiny');
     @extend .mb-3;
 }
 
 ul.breadcrumb li {
     display: inline;
-    color: color('gray', '700');
+    color: color('gray', '500');
 }
 
 ul.breadcrumb li+li:before {
     @extend .p-1;
     content: '/\00a0';
-    color: color('black', 'base');
+    color: color('gray', '900');
 }
