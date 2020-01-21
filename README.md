@@ -1,2 +1,2 @@
-# proj-pokemon-teams
+# Pokemon Teams
 Pokemon-Teams App
