@@ -48,13 +48,15 @@ code, .text-code {
 }
 
 @each $key, $color in $colors {
-    .text-#{$key} {
-        color: map-get($color, 'base');
-    }
-
-    .bg-#{$key} {
-        color: map-get($color, 'font');
-        background-color: map-get($color, 'base');
+    @if $key != 'gray' and $key != 'blue' {
+        .text-#{$key} {
+            color: map-get($color, 'base');
+        }
+    
+        .bg-#{$key} {
+            color: map-get($color, 'font');
+            background-color: map-get($color, 'base');
+        }
     }
 }
 
