@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Header from './header/Header';
+import CardRating from './card/CardRating';
 
 class App extends React.Component {
   constructor(props) {
@@ -48,6 +49,7 @@ class App extends React.Component {
           breadcrumbs={this.state.breadcrumbs}
           gotoPage={this.gotoPage} />
 
+          <CardRating rating="04" max={this.props.site.rating.max} />
       </div>
     );
   }

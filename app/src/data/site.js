@@ -13,6 +13,9 @@ const site = {
             "sprites": "./images/pokemon/",
             "icons": "./images/pokemon/icons/"
         }
+    },
+    "rating": {
+        "max": 5
     }
 };
 
