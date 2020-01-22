@@ -1,8 +1,8 @@
-const fs = require('fs');
-const ENCODING = 'utf-8';
+import fs from 'fs';
 
+const ENCODING = 'utf-8';
 const data = [];
-const gens = fs.readdirSync(__dirname + './../teams');
+const gens = fs.readdirSync(__dirname + './../teams', ENCODING);
 
 gens.forEach((folder, i) => {
     const generation = {
@@ -10,12 +10,12 @@ gens.forEach((folder, i) => {
         "teams": []
     };
 
-    const teams = fs.readdirSync(__dirname + './../teams/' + folder);
+    const teams = fs.readdirSync(__dirname + './../teams/' + folder, ENCODING);
     teams.forEach(filename => {
-        generation.teams.push(JSON.parse(fs.readFileSync(__dirname + './../teams/' + folder + '/' + filename)));
+        generation.teams.push(JSON.parse(fs.readFileSync(__dirname + './../teams/' + folder + '/' + filename, ENCODING)));
     });
 
     data.push(generation);
 });
 
-module.exports = data;
+export default data;
