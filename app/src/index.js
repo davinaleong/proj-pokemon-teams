@@ -14,6 +14,8 @@ import natures from './data/natures';
 import stats from './data/stats';
 import items from './data/items';
 
+import generations from './data/generations';
+
 ReactDOM.render(
     <App 
         states={states}
@@ -25,6 +27,8 @@ ReactDOM.render(
         natures={natures}
         stats={stats}
         items={items}
+
+        generations={generations}
     />,
     document.getElementById('root')
 );

@@ -12,7 +12,7 @@ class Header extends React.Component {
     render() {
         return(
             <header>
-                <Title title={this.props.site.title} />
+                <Title text={this.props.site.title} />
                 <Breadcrumbs
                     breadcrumbs={this.props.breadcrumbs}
                     gotoPage={this.props.gotoPage} />

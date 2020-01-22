@@ -4,6 +4,7 @@ import Header from './header/Header';
 import PokemonIcon from './images/PokemonIcon';
 import PokemonSprite from './images/PokemonSprite';
 import ItemSprite from './images/ItemSprite';
+import GenerationsPage from './pages/GenerationsPage';
 
 class App extends React.Component {
   constructor(props) {
@@ -103,6 +104,20 @@ class App extends React.Component {
     />
   }
 
+  renderPage = (page) => {
+    switch(page) {
+      case this.props.states.HOME:
+        return <GenerationsPage generations={this.props.generations} />;
+
+      case this.props.states.TEAMS:
+        // return <TeamsPage />;
+        return null;
+
+      default:
+        return null;
+    }
+  }
+
   render() {
     return (
       <div>
@@ -111,11 +126,7 @@ class App extends React.Component {
           breadcrumbs={this.state.breadcrumbs}
           gotoPage={this.gotoPage} />
 
-        {this.renderPokemonImage('Pikachu', this.props.imageTypes.ANIMATED)}
-        {this.renderPokemonImage('Pikachu', this.props.imageTypes.SPRITE)}
-        {this.renderPokemonImage('Pikachu', this.props.imageTypes.ICON)}
-
-        {this.renderItemImage('Choice Band')}
+        {this.renderPage(this.state.page.current)}
       </div>
     );
   }
