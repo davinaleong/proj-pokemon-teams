@@ -2,6 +2,8 @@ import React from 'react';
 
 import Header from './header/Header';
 import PokemonIcon from './images/PokemonIcon';
+import PokemonSprite from './images/PokemonSprite';
+import ItemSprite from './images/ItemSprite';
 
 class App extends React.Component {
   constructor(props) {
@@ -58,6 +60,8 @@ class App extends React.Component {
           gotoPage={this.gotoPage} />
 
         <PokemonIcon folder={this.props.site.assets.pokemon.icons} filename={'pikachu-icon.png'} alt={'Pikachu icon'} />
+        <PokemonSprite folder={this.props.site.assets.pokemon.sprites} filename={'pikachu.gif'} alt={'Pikachu'} />
+        <ItemSprite folder={this.props.site.assets.pokemon.items} filename={'life-orb.png'} alt={'Life Orb'}/>
       </div>
     );
   }
