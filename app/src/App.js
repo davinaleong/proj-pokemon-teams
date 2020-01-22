@@ -11,10 +11,7 @@ class App extends React.Component {
         current: this.props.states.HOME,
         previous: this.props.states.HOME
       },
-      breadcrumbs: [
-        {"name": "Home", "state": this.props.states.HOME},
-        {"name": "Kanto Region"}
-      ]
+      breadcrumbs: [{"name": "Home"}]
     };
   }
 
@@ -26,6 +23,21 @@ class App extends React.Component {
         previous: previous
       }
     });
+  }
+
+  setBreadcrumbs = (name) => {
+    if (name === 'Home') {
+      this.setState({
+        breadcrumbs: [{"name": "Home"}]
+      });
+    } else {
+      this.setState({
+        breadcrumbs: [
+          {"name": "Home", "state": this.props.states.HOME},
+          {"name": "Kanto Region"}
+        ]
+      });
+    }
   }
 
   render() {
