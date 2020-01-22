@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from './header/Header';
-import CardRating from './card/CardRating';
+import PokemonIcon from './images/PokemonIcon';
 
 class App extends React.Component {
   constructor(props) {
@@ -41,6 +41,14 @@ class App extends React.Component {
     }
   }
 
+  getObjectFromArray = (array, name) => {
+    return array.filter(item => item.name === name)[0];
+  }
+
+  getPokemon = (name) => {
+    return this.getObjectFromArray(this.props.pokemon, name);
+  }
+
   render() {
     return (
       <div>
@@ -49,7 +57,7 @@ class App extends React.Component {
           breadcrumbs={this.state.breadcrumbs}
           gotoPage={this.gotoPage} />
 
-          <CardRating rating="04" max={this.props.site.rating.max} />
+        <PokemonIcon folder={this.props.site.assets.pokemon.icons} filename={'pikachu-icon.png'} alt={'Pikachu icon'} />
       </div>
     );
   }
