@@ -1,104 +1,154 @@
 const natures = [
     {
         "name": "Adamant",
-        "positiveStat": "",
-        "negativeStat": ""
+        "stats": {
+            "positive": "",
+            "negative": ""
+        }
     }, {
         "name": "Bashful",
-        "positiveStat": "A",
-        "negativeStat": "D"
+        "stats": {
+            "positive": "A",
+            "negative": "D"
+        }
     }, {
         "name": "Bold",
-        "positiveStat": "A",
-        "negativeStat": "SA"
+        "stats": {
+            "positive": "A",
+            "negative": "SA"
+        }
     }, {
         "name": "Brave",
-        "positiveStat": "A",
-        "negativeStat": "SD"
+        "stats": {
+            "positive": "A",
+            "negative": "SD"
+        }
     }, {
         "name": "Calm",
-        "positiveStat": "A",
-        "negativeStat": "S"
+        "stats": {
+            "positive": "A",
+            "negative": "S"
+        }
     }, {
         "name": "Careful",
-        "positiveStat": "D",
-        "negativeStat": "A"
+        "stats": {
+            "positive": "D",
+            "negative": "A"
+        }
     }, {
         "name": "Docile",
-        "positiveStat": "",
-        "negativeStat": ""
+        "stats": {
+            "positive": "",
+            "negative": ""
+        }
     }, {
         "name": "Gentle",
-        "positiveStat": "D",
-        "negativeStat": "SA"
+        "stats": {
+            "positive": "D",
+            "negative": "SA"
+        }
     }, {
         "name": "Hardy",
-        "positiveStat": "D",
-        "negativeStat": "SD"
+        "stats": {
+            "positive": "D",
+            "negative": "SD"
+        }
     }, {
         "name": "Hasty",
-        "positiveStat": "D",
-        "negativeStat": "S"
+        "stats": {
+            "positive": "D",
+            "negative": "S"
+        }
     }, {
         "name": "Impish",
-        "positiveStat": "SA",
-        "negativeStat": "A"
+        "stats": {
+            "positive": "SA",
+            "negative": "A"
+        }
     }, {
         "name": "Jolly",
-        "positiveStat": "SA",
-        "negativeStat": "D"
+        "stats": {
+            "positive": "SA",
+            "negative": "D"
+        }
     }, {
         "name": "Lax",
-        "positiveStat": "",
-        "negativeStat": ""
+        "stats": {
+            "positive": "",
+            "negative": ""
+        }
     }, {
         "name": "Lonely",
-        "positiveStat": "SA",
-        "negativeStat": "SD"
+        "stats": {
+            "positive": "SA",
+            "negative": "SD"
+        }
     }, {
         "name": "Mild",
-        "positiveStat": "SA",
-        "negativeStat": "S"
+        "stats": {
+            "positive": "SA",
+            "negative": "S"
+        }
     }, {
         "name": "Modest",
-        "positiveStat": "SD",
-        "negativeStat": "A"
+        "stats": {
+            "positive": "SD",
+            "negative": "A"
+        }
     }, {
         "name": "Naive",
-        "positiveStat": "SA",
-        "negativeStat": "D"
+        "stats": {
+            "positive": "SA",
+            "negative": "D"
+        }
     }, {
         "name": "Naughty",
-        "positiveStat": "SD",
-        "negativeStat": "SA"
+        "stats": {
+            "positive": "SD",
+            "negative": "SA"
+        }
     }, {
         "name": "Quiet",
-        "positiveStat": "",
-        "negativeStat": ""
+        "stats": {
+            "positive": "",
+            "negative": ""
+        }
     }, {
         "name": "Quirky",
-        "positiveStat": "SD",
-        "negativeStat": "S"
+        "stats": {
+            "positive": "SD",
+            "negative": "S"
+        }
     }, {
         "name": "Rash",
-        "positiveStat": "S",
-        "negativeStat": "A"
+        "stats": {
+            "positive": "S",
+            "negative": "A"
+        }
     }, {
         "name": "Relaxed",
-        "positiveStat": "S",
-        "negativeStat": "D"
+        "stats": {
+            "positive": "S",
+            "negative": "D"
+        }
     }, {
         "name": "Sassy",
-        "positiveStat": "S",
-        "negativeStat": "SA"
+        "stats": {
+            "positive": "S",
+            "negative": "SA"
+        }
     }, {
         "name": "Serious",
-        "positiveStat": "S",
-        "negativeStat": "SD"
+        "stats": {
+            "positive": "S",
+            "negative": "SD"
+        }
     }, {
         "name": "Timid",
-        "positiveStat": "",
-        "negativeStat": ""
+        "stats": {
+            "positive": "",
+            "negative": ""
+        }
     }
 ];
 

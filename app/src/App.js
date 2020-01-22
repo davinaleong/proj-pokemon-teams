@@ -1,6 +1,8 @@
 import React from 'react';
 
 import Header from './header/Header';
+import Star from './rating/Star';
+import StarChecked from './rating/StarChecked';
 
 class App extends React.Component {
   constructor(props) {
@@ -47,6 +49,9 @@ class App extends React.Component {
           site={this.props.site}
           breadcrumbs={this.state.breadcrumbs}
           gotoPage={this.gotoPage} />
+
+        <Star />
+        <StarChecked />
       </div>
     );
   }
