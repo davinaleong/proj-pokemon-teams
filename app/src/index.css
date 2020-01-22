@@ -1372,7 +1372,9 @@ ul.breadcrumb li + li:before {
           box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.2);
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'card-title card-title card-title card-title card-gen card-gen' 'card-pokemon card-pokemon card-pokemon card-pokemon card-pokemon card-pokemon' 'card-rating card-rating card-rating card-rating card-rating card-rating';
+      grid-template-areas: 'card-title card-title card-title card-title card-gen card-gen'
+ 'card-pokemon card-pokemon card-pokemon card-pokemon card-pokemon card-pokemon'
+ 'card-rating card-rating card-rating card-rating card-rating card-rating';
   border-radius: 0.1rem;
 }
 
