@@ -7,7 +7,7 @@ class ItemSprite extends React.Component {
 
     render() {
         return (
-            <img src={this.props.folder+this.props.filename} alt={this.props.name || 'Item sprite'} />
+            <img src={this.props.folder+this.props.filename} alt={this.props.alt || 'Item sprite'} />
         );
     }
 }

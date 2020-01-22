@@ -9,10 +9,10 @@ const site = {
         "icon": "./icons/",
         "image": "./images/",
         "pokemon": {
-            "items": "./images/items/",
             "sprites": "./images/pokemon/",
             "icons": "./images/pokemon/icons/"
-        }
+        },
+        "items": "./images/items/"
     },
     "rating": {
         "max": 5

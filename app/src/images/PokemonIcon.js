@@ -7,7 +7,7 @@ class PokemonIcon extends React.Component {
 
     render() {
         return (
-            <img className="pokemon-icon" src={this.props.folder + this.props.filename} alt={this.props.name + ' icon' || 'Pokémon icon'} />
+            <img className="pokemon-icon" src={this.props.folder + this.props.filename} alt={this.props.alt + ' icon' || 'Pokémon icon'} />
         );
     }
 }

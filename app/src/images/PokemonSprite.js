@@ -7,7 +7,7 @@ class PokemonSprite extends React.Component {
 
     render() {
         return (
-            <img src={this.props.folder+this.props.filename} alt={this.props.name || 'Pokemon sprite'} height="120px" />
+            <img src={this.props.folder+this.props.filename} alt={this.props.alt || 'Pokemon sprite'} height="120px" />
         );
     }
 }

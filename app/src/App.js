@@ -85,6 +85,24 @@ class App extends React.Component {
     }
   }
 
+  getItem = (name) => {
+    return this.getObjectFromArray(this.props.items, name);
+  }
+
+  renderItemImage = (name) => {
+    const item = this.getItem(name);
+
+    if (!item) {
+      return null;
+    }
+
+    return <ItemSprite
+      folder={this.props.site.assets.items}
+      filename={item.image}
+      alt={item.name}
+    />
+  }
+
   render() {
     return (
       <div>
@@ -96,6 +114,8 @@ class App extends React.Component {
         {this.renderPokemonImage('Pikachu', this.props.imageTypes.ANIMATED)}
         {this.renderPokemonImage('Pikachu', this.props.imageTypes.SPRITE)}
         {this.renderPokemonImage('Pikachu', this.props.imageTypes.ICON)}
+
+        {this.renderItemImage('Choice Band')}
       </div>
     );
   }
