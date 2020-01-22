@@ -55,7 +55,7 @@ class App extends React.Component {
   renderPokemonImage = (name, type) => {
     const pokemon = this.getPokemon(name);
 
-    if (!pokemon) {
+    if (!pokemon || !pokemon.images) {
       return null;
     }
 
@@ -94,14 +94,18 @@ class App extends React.Component {
     const item = this.getItem(name);
 
     if (!item) {
-      return null;
+      return <ItemSprite
+        folder={this.props.site.assets.defaults.item}
+        filename={''}
+        alt={'Item sprite'}
+      />;
     }
 
     return <ItemSprite
       folder={this.props.site.assets.items}
       filename={item.image}
       alt={item.name}
-    />
+    />;
   }
 
   renderPage = (page) => {
@@ -125,6 +129,8 @@ class App extends React.Component {
           site={this.props.site}
           breadcrumbs={this.state.breadcrumbs}
           gotoPage={this.gotoPage} />
+
+        {this.renderItemImage()}
 
         {this.renderPage(this.state.page.current)}
       </div>

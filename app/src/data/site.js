@@ -12,7 +12,14 @@ const site = {
             "sprites": "./images/pokemon/",
             "icons": "./images/pokemon/icons/"
         },
-        "items": "./images/items/"
+        "items": "./images/items/",
+        "defaults": {
+            "pokemon": {
+                "sprites": "./images/pokemon/000.png",
+                "icons": "./images/pokemon/icons/000-icon.png"
+            },
+            "item": "./images/items/question.png"
+        }
     },
     "rating": {
         "max": 5
