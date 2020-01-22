@@ -10,12 +10,15 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
+    const generation = this.props.generations.filter(generation => generation.name === '7')[0];
+
     this.state = {
       page: {
         current: this.props.states.HOME,
         previous: this.props.states.HOME
       },
-      breadcrumbs: [{"name": "Home"}]
+      breadcrumbs: [{"name": "Home"}],
+      team: generation.teams[0]
     };
   }
 
@@ -52,13 +55,22 @@ class App extends React.Component {
     return this.getObjectFromArray(this.props.pokemon, name);
   }
 
-  renderPokemonImage = (name, type) => {
+  getPokemonFromTeam = (team) => {
+    const pokemon = [];
+    team.slots.forEach(slot => {
+      pokemon.push(this.getPokemon(slot.pokemon));
+    });
+    return pokemon;
+  }
+
+  renderPokemonImage = (name, type, key=null) => {
     const pokemon = this.getPokemon(name);
 
     if (!pokemon || !pokemon.images) {
       switch(type) {
         case this.props.imageTypes.SPRITE:
           return <PokemonSprite
+            key={key}
             folder={this.props.site.assets.defaults.pokemon.sprites}
             filename={''}
             alt={'Pokémon sprite'}
@@ -66,6 +78,7 @@ class App extends React.Component {
   
         case this.props.imageTypes.ANIMATED:
           return <PokemonSprite
+            key={key}
             folder={this.props.site.assets.defaults.pokemon.sprites}
             filename={''}
             alt={'Pokémon sprite'}
@@ -73,6 +86,7 @@ class App extends React.Component {
   
         case this.props.imageTypes.ICON:
           return <PokemonIcon
+            key={key}
             folder={this.props.site.assets.defaults.pokemon.icons}
             filename={''}
             alt={'Pokémon icon'}
@@ -86,6 +100,7 @@ class App extends React.Component {
     switch(type) {
       case this.props.imageTypes.SPRITE:
         return <PokemonSprite
+          key={key}
           folder={this.props.site.assets.pokemon.sprites}
           filename={pokemon.images.sprite}
           alt={pokemon.name}
@@ -93,6 +108,7 @@ class App extends React.Component {
 
       case this.props.imageTypes.ANIMATED:
         return <PokemonSprite
+          key={key}
           folder={this.props.site.assets.pokemon.sprites}
           filename={pokemon.images.animated}
           alt={pokemon.name}
@@ -100,6 +116,7 @@ class App extends React.Component {
 
       case this.props.imageTypes.ICON:
         return <PokemonIcon
+          key={key}
           folder={this.props.site.assets.pokemon.icons}
           filename={pokemon.images.icon}
           alt={pokemon.name}
@@ -114,11 +131,12 @@ class App extends React.Component {
     return this.getObjectFromArray(this.props.items, name);
   }
 
-  renderItemImage = (name) => {
+  renderItemImage = (name, key=null) => {
     const item = this.getItem(name);
 
     if (!item) {
       return <ItemSprite
+        key={key}
         folder={this.props.site.assets.defaults.item}
         filename={''}
         alt={'Item sprite'}
@@ -126,6 +144,7 @@ class App extends React.Component {
     }
 
     return <ItemSprite
+      key={key}
       folder={this.props.site.assets.items}
       filename={item.image}
       alt={item.name}
