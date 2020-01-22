@@ -1295,7 +1295,6 @@ header {
 
 ul.breadcrumb {
   list-style: none;
-  font-family: font("heading");
   background-color: #e0e0e0;
   border-radius: 0.1rem;
 }

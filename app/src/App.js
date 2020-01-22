@@ -7,17 +7,34 @@ class App extends React.Component {
     super(props);
 
     this.state = {
+      page: {
+        current: this.props.states.HOME,
+        previous: this.props.states.HOME
+      },
       breadcrumbs: [
-        {"name": "Home", "state": this.props.HOME},
+        {"name": "Home", "state": this.props.states.HOME},
         {"name": "Kanto Region"}
       ]
     };
   }
 
+  gotoPage = (state) => {
+    const previous = this.state.page.current;
+    this.setState({
+      page: {
+        current: state,
+        previous: previous
+      }
+    });
+  }
+
   render() {
     return (
       <div>
-        <Header site={this.props.site} breadcrumbs={this.state.breadcrumbs} />
+        <Header
+          site={this.props.site}
+          breadcrumbs={this.state.breadcrumbs}
+          gotoPage={this.gotoPage} />
       </div>
     );
   }

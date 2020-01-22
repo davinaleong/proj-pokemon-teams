@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Title from './Title';
+import Breadcrumbs from './Breadcrumbs';
 import Copyright from './Copyright';
 
 class Header extends React.Component {
@@ -12,6 +13,9 @@ class Header extends React.Component {
         return(
             <header>
                 <Title title={this.props.site.title} />
+                <Breadcrumbs
+                    breadcrumbs={this.props.breadcrumbs}
+                    gotoPage={this.props.gotoPage} />
                 <Copyright copyright={this.props.site.copyright} />
             </header>
         );
