@@ -51,6 +51,40 @@ class App extends React.Component {
     return this.getObjectFromArray(this.props.pokemon, name);
   }
 
+  renderPokemonImage = (name, type) => {
+    const pokemon = this.getPokemon(name);
+
+    if (!pokemon) {
+      return null;
+    }
+
+    switch(type) {
+      case this.props.imageTypes.SPRITE:
+        return <PokemonSprite
+          folder={this.props.site.assets.pokemon.sprites}
+          filename={pokemon.images.sprite}
+          alt={pokemon.name}
+        />;
+
+      case this.props.imageTypes.ANIMATED:
+        return <PokemonSprite
+          folder={this.props.site.assets.pokemon.sprites}
+          filename={pokemon.images.animated}
+          alt={pokemon.name}
+        />;
+
+      case this.props.imageTypes.ICON:
+        return <PokemonIcon
+          folder={this.props.site.assets.pokemon.icons}
+          filename={pokemon.images.icon}
+          alt={pokemon.name}
+        />;
+
+      default:
+        return null;
+    }
+  }
+
   render() {
     return (
       <div>
@@ -59,9 +93,9 @@ class App extends React.Component {
           breadcrumbs={this.state.breadcrumbs}
           gotoPage={this.gotoPage} />
 
-        <PokemonIcon folder={this.props.site.assets.pokemon.icons} filename={'pikachu-icon.png'} alt={'Pikachu icon'} />
-        <PokemonSprite folder={this.props.site.assets.pokemon.sprites} filename={'pikachu.gif'} alt={'Pikachu'} />
-        <ItemSprite folder={this.props.site.assets.pokemon.items} filename={'life-orb.png'} alt={'Life Orb'}/>
+        {this.renderPokemonImage('Pikachu', this.props.imageTypes.ANIMATED)}
+        {this.renderPokemonImage('Pikachu', this.props.imageTypes.SPRITE)}
+        {this.renderPokemonImage('Pikachu', this.props.imageTypes.ICON)}
       </div>
     );
   }

@@ -6,9 +6,10 @@ import * as serviceWorker from './serviceWorker';
 
 import states from './data/states';
 import site from './data/site';
+import imageTypes from './data/imageTypes';
+
 import pokemon from './data/pokemon';
 import types from './data/types';
-// import abilities from './data/abilities';
 import natures from './data/natures';
 import stats from './data/stats';
 import items from './data/items';
@@ -17,9 +18,10 @@ ReactDOM.render(
     <App 
         states={states}
         site={site}
+        imageTypes={imageTypes}
+        
         pokemon={pokemon}
         types={types}
-        // abilities={abilities}
         natures={natures}
         stats={stats}
         items={items}
