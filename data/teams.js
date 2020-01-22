@@ -4,7 +4,7 @@ const ENCODING = 'utf-8';
 const data = [];
 const gens = fs.readdirSync(__dirname + './../teams', ENCODING);
 
-gens.forEach((folder, i) => {
+gens.forEach(folder => {
     const generation = {
         "name": folder,
         "teams": []
