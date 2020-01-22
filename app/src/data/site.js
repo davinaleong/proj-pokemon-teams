@@ -1,7 +1,7 @@
 const site = {
-    "title": "Pokemon Teams",
+    "title": "Pokémon Teams",
     "copyright": {
-        "name": "Pokemon Teams",
+        "name": "Pokémon Teams",
         "author": "Davina Leong",
         "year": "2020"
     },
