@@ -56,7 +56,31 @@ class App extends React.Component {
     const pokemon = this.getPokemon(name);
 
     if (!pokemon || !pokemon.images) {
-      return null;
+      switch(type) {
+        case this.props.imageTypes.SPRITE:
+          return <PokemonSprite
+            folder={this.props.site.assets.defaults.pokemon.sprites}
+            filename={''}
+            alt={'Pokémon sprite'}
+          />;
+  
+        case this.props.imageTypes.ANIMATED:
+          return <PokemonSprite
+            folder={this.props.site.assets.defaults.pokemon.sprites}
+            filename={''}
+            alt={'Pokémon sprite'}
+          />;
+  
+        case this.props.imageTypes.ICON:
+          return <PokemonIcon
+            folder={this.props.site.assets.defaults.pokemon.icons}
+            filename={''}
+            alt={'Pokémon icon'}
+          />;
+  
+        default:
+          return null;
+      }
     }
 
     switch(type) {
@@ -129,8 +153,6 @@ class App extends React.Component {
           site={this.props.site}
           breadcrumbs={this.state.breadcrumbs}
           gotoPage={this.gotoPage} />
-
-        {this.renderItemImage()}
 
         {this.renderPage(this.state.page.current)}
       </div>
