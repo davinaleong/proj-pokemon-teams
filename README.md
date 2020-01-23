@@ -3,7 +3,7 @@ Pokemon-Teams App
 
 ## Current TODO:
 
-1. Load Teams `JSON` files
+1. Render `TEAM` page
 
 ## Tasks
 

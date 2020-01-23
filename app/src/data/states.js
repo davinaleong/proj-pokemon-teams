@@ -1,6 +1,6 @@
 const states = {
     "HOME": "HOME",
-    "TEAMS": "TEAMS"
+    "TEAM": "TEAM"
 };
 
 export default states;
