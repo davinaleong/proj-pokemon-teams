@@ -7,7 +7,9 @@ class Title extends React.Component {
 
     render() {
         return (
-            <h3 className="card-title">{this.props.text}</h3>
+            <h3 className="card-title" title={this.props.text}>
+                <button className="link" type="button">{this.props.truncate(this.props.text)}</button>
+            </h3>
         );
     }
 }

@@ -86,7 +86,7 @@ const pokemon = [
         "images": {
             "animated": "primarina.gif",
             "sprite": "primarina.png",
-            "icon": "primarina.png"
+            "icon": "primarina-icon.png"
         }
     }, {
         "name": "Muk (Alolan)",

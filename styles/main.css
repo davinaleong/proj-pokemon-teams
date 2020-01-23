@@ -893,6 +893,7 @@ a.text-water:hover {
 }
 
 button {
+  font-size: inherit;
   display: inline-block;
   color: #fff;
   background-color: #2196f3;
@@ -1372,22 +1373,24 @@ ul.breadcrumb li + li:before {
           box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.2);
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'card-title card-title card-title card-title card-gen card-gen' 'card-pokemon card-pokemon card-pokemon card-pokemon card-pokemon card-pokemon' 'card-rating card-rating card-rating card-rating card-rating card-rating';
+      grid-template-areas: 'card-title card-gen' 'card-pokemon card-pokemon' 'card-rating card-rating';
   border-radius: 0.1rem;
+  width: 300px;
 }
 
 .card-title {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-area: card-title;
   font-size: 1.5rem;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .card-gen {
   -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 2;
+  -ms-grid-column: 2;
   grid-area: card-gen;
   font-size: 1.5rem;
   text-align: right;
@@ -1396,14 +1399,14 @@ ul.breadcrumb li + li:before {
 .card-pokemon {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
+  -ms-grid-column-span: 2;
   grid-area: card-pokemon;
 }
 
 .card-rating {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
+  -ms-grid-column-span: 2;
   grid-area: card-rating;
 }
 

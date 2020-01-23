@@ -11,7 +11,12 @@ class GenerationsPage extends React.Component {
         const generations = [];
         this.props.generations.forEach((generation, index) => {
             generations.push(
-                <Generation key={'g'+index} generation={generation} />
+                <Generation
+                    key={'g'+index}
+                    generation={generation}
+                    truncate={this.props.truncate}
+                    getPokemonFromTeam={this.props.getPokemonFromTeam}
+                    renderPokemonImage={this.props.renderPokemonImage} />
             );
         });
 

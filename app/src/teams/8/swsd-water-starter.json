@@ -2,5 +2,5 @@
     "name": "SWSD: Water Starter",
     "rating": "Unrated",
     "generation": "8",
-    "slots": [{}, {}, {}, {}, {}, {}]
+    "slots": null
 }

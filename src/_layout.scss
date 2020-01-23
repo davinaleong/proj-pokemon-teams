@@ -55,16 +55,19 @@ main {
     box-shadow: $box-shadow;
     display: grid;
     grid-template-areas: 
-        'card-title card-title card-title card-title card-gen card-gen'
-        'card-pokemon card-pokemon card-pokemon card-pokemon card-pokemon card-pokemon'
-        'card-rating card-rating card-rating card-rating card-rating card-rating'
-    ;
+        'card-title card-gen'
+        'card-pokemon card-pokemon'
+        'card-rating card-rating';
     border-radius: radius('tiny');
+    width: 300px;
 }
 
 .card-title {
     grid-area: card-title;
     font-size: size('large');
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .card-gen {

@@ -21,14 +21,14 @@ class Rating extends React.Component {
             render = [];
             for (let i = 0; i < rating; ++i) {
                 render.push(
-                    <StarUnchecked />
+                    <StarUnchecked key={'su'+i} />
                 );
             }
 
             const checked = this.props.max - rating;
             for (let j = 0; j < checked; ++j) {
                 render.push(
-                    <Star />
+                    <Star key={'s'+j} />
                 );
             }
         }

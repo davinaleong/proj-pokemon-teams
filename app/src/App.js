@@ -22,6 +22,11 @@ class App extends React.Component {
     };
   }
 
+  truncate = (string, length=14) => {
+    const sub = string.substring(0, length);
+    return sub + '\u2026';
+  }
+
   gotoPage = (state) => {
     const previous = this.state.page.current;
     this.setState({
@@ -56,6 +61,10 @@ class App extends React.Component {
   }
 
   getPokemonFromTeam = (team) => {
+    if (!team.slots) {
+      return null;
+    }
+
     const pokemon = [];
     team.slots.forEach(slot => {
       pokemon.push(this.getPokemon(slot.pokemon));
@@ -154,7 +163,11 @@ class App extends React.Component {
   renderPage = (page) => {
     switch(page) {
       case this.props.states.HOME:
-        return <GenerationsPage generations={this.props.generations} />;
+        return <GenerationsPage
+          generations={this.props.generations}
+          truncate={this.truncate}
+          getPokemonFromTeam={this.getPokemonFromTeam}
+          renderPokemonImage={this.renderPokemonImage} />;
 
       case this.props.states.TEAMS:
         // return <TeamsPage />;
