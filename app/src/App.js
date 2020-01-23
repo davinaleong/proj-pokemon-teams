@@ -10,15 +10,13 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
-    const generation = this.props.generations.filter(generation => generation.name === '7')[0];
-
     this.state = {
       page: {
         current: this.props.states.HOME,
         previous: this.props.states.HOME
       },
       breadcrumbs: [{"name": "Home"}],
-      team: generation.teams[0]
+      team: null
     };
   }
 
