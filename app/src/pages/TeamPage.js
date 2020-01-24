@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Team from './../slot/Team';
+import Rating from './../card/Rating';
+
 class TeamPage extends React.Component {
     constructor(props) {
         super(props);
@@ -8,7 +11,8 @@ class TeamPage extends React.Component {
     render() {
         return (
             <main>
-                Team
+                <Team team={this.props.team}/>
+                <Rating rating={this.props.team.rating} max={this.props.site.rating.max} />
             </main>
         );
     }

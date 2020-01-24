@@ -14,6 +14,7 @@ class GenerationsPage extends React.Component {
                 <Generation
                     key={'g'+index}
                     states={this.props.states}
+                    site={this.props.site}
                     generation={generation}
                     truncate={this.props.truncate}
                     setPage={this.props.setPage}

@@ -14,6 +14,7 @@ class Generation extends React.Component {
                 <Title text={this.props.generation.name} />
                 <Cards
                     states={this.props.states}
+                    site={this.props.site}
                     teams={this.props.generation.teams}
                     truncate={this.props.truncate}
                     setPage={this.props.setPage}

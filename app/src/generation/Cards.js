@@ -14,6 +14,7 @@ class Cards extends React.Component {
                 <Card
                     key={'c'+index}
                     states={this.props.states}
+                    site={this.props.site}
                     team={team}
                     pokemon={this.props.getPokemonFromTeam(team)}
                     truncate={this.props.truncate}

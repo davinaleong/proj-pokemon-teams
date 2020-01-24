@@ -170,6 +170,7 @@ class App extends React.Component {
       case this.props.states.HOME:
         return <HomePage
           states={this.props.states}
+          site={this.props.site}
           generations={this.props.generations}
           truncate={this.truncate}
           setPage={this.setPage}
@@ -178,8 +179,10 @@ class App extends React.Component {
           getPokemonFromTeam={this.getPokemonFromTeam}
           renderPokemonImage={this.renderPokemonImage} />;
 
-      case this.props.states.TEAMS:
-        return <TeamPage />;
+      case this.props.states.TEAM:
+        return <TeamPage
+          site={this.props.site}
+          team={this.state.team} />;
 
       default:
         return null;
