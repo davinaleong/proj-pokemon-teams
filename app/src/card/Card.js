@@ -14,7 +14,9 @@ class Card extends React.Component {
         let pokemon = null;
         if (this.props.team.slots) {
             pokemon = <Pokemon
-                pokemon={this.props.pokemon}
+                team={this.props.team}
+                imageTypes={this.props.imageTypes}
+                getPokemon={this.props.getPokemon}
                 renderPokemonImage={this.props.renderPokemonImage} />
         }
         

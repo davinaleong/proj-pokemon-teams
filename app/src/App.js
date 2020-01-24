@@ -172,11 +172,12 @@ class App extends React.Component {
           states={this.props.states}
           site={this.props.site}
           generations={this.props.generations}
+          imageTypes={this.props.imageTypes}
           truncate={this.truncate}
           setPage={this.setPage}
           setBreadcrumbs={this.setBreadcrumbs}
           setTeam={this.setTeam}
-          getPokemonFromTeam={this.getPokemonFromTeam}
+          getPokemon={this.getPokemon}
           renderPokemonImage={this.renderPokemonImage} />;
 
       case this.props.states.TEAM:

@@ -16,11 +16,12 @@ class GenerationsPage extends React.Component {
                     states={this.props.states}
                     site={this.props.site}
                     generation={generation}
+                    imageTypes={this.props.imageTypes}
                     truncate={this.props.truncate}
                     setPage={this.props.setPage}
                     setBreadcrumbs={this.props.setBreadcrumbs}
                     setTeam={this.props.setTeam}
-                    getPokemonFromTeam={this.props.getPokemonFromTeam}
+                    getPokemon={this.props.getPokemon}
                     renderPokemonImage={this.props.renderPokemonImage} />
             );
         });

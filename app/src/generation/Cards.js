@@ -16,11 +16,12 @@ class Cards extends React.Component {
                     states={this.props.states}
                     site={this.props.site}
                     team={team}
-                    pokemon={this.props.getPokemonFromTeam(team)}
+                    imageTypes={this.props.imageTypes}
                     truncate={this.props.truncate}
                     setPage={this.props.setPage}
                     setBreadcrumbs={this.props.setBreadcrumbs}
                     setTeam={this.props.setTeam}
+                    getPokemon={this.props.getPokemon}
                     renderPokemonImage={this.props.renderPokemonImage} />
             );
         });
