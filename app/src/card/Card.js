@@ -31,7 +31,9 @@ class Card extends React.Component {
                     setTeam={this.props.setTeam} />
                 <Gen gen={this.props.team.gen} />
                 {pokemon}
-                <Rating rating={this.props.team.rating} max={this.props.site.rating.max} />
+                <Rating
+                    rating={this.props.team.rating}
+                    max={this.props.site.rating.max} />
             </div>
         );
     }

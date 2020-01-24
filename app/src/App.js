@@ -117,24 +117,21 @@ class App extends React.Component {
           key={key}
           folder={this.props.site.assets.pokemon.sprites}
           filename={pokemon.images.sprite}
-          alt={pokemon.name}
-        />;
+          alt={pokemon.name} />;
 
       case this.props.imageTypes.ANIMATED:
         return <PokemonSprite
           key={key}
           folder={this.props.site.assets.pokemon.sprites}
           filename={pokemon.images.animated}
-          alt={pokemon.name}
-        />;
+          alt={pokemon.name} />;
 
       case this.props.imageTypes.ICON:
         return <PokemonIcon
           key={key}
           folder={this.props.site.assets.pokemon.icons}
           filename={pokemon.images.icon}
-          alt={pokemon.name}
-        />;
+          alt={pokemon.name} />;
 
       default:
         return null;
@@ -153,16 +150,14 @@ class App extends React.Component {
         key={key}
         folder={this.props.site.assets.defaults.item}
         filename={''}
-        alt={'Item sprite'}
-      />;
+        alt={'Item sprite'} />;
     }
 
     return <ItemSprite
       key={key}
       folder={this.props.site.assets.items}
       filename={item.image}
-      alt={item.name}
-    />;
+      alt={item.name} />;
   }
 
   renderPage = (page) => {
