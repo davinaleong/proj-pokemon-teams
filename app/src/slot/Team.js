@@ -2,6 +2,7 @@ import React from 'react';
 
 import Title from './Title';
 import Subcontent from './Subcontent';
+import Slots from './Slots';
 
 class Team extends React.Component {
     constructor(props) {
@@ -15,6 +16,8 @@ class Team extends React.Component {
                 <Subcontent
                     site={this.props.site}
                     team={this.props.team} />
+                <Slots
+                    slots={this.props.team.slots} />
             </section>
         );
     }
