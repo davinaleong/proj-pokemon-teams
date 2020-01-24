@@ -13,11 +13,16 @@ class Breadcrumbs extends React.Component {
         this.props.breadcrumbs.forEach((breadcrumb, index) => {
             if (breadcrumb.state) {
                 items.push(
-                    <BreadcrumbLink key={'b'+index} item={breadcrumb} />
+                    <BreadcrumbLink
+                        key={'b'+index}
+                        item={breadcrumb}
+                        setPage={this.props.setPage} />
                 );
             } else {
                 items.push(
-                    <BreadcrumbItem key={'b'+index} item={breadcrumb} />
+                    <BreadcrumbItem
+                        key={'b'+index}
+                        item={breadcrumb} />
                 );
             }
         });

@@ -20,7 +20,13 @@ class Card extends React.Component {
         
         return (
             <div className="team-card">
-                <Title text={this.props.team.name} truncate={this.props.truncate} />
+                <Title
+                    states={this.props.states}
+                    team={this.props.team}
+                    truncate={this.props.truncate}
+                    setPage={this.props.setPage}
+                    setBreadcrumbs={this.props.setBreadcrumbs}
+                    setTeam={this.props.setTeam} />
                 <Gen gen={this.props.team.gen} />
                 {pokemon}
                 <Rating rating={this.props.team.rating} />

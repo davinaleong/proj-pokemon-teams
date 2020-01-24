@@ -8,7 +8,7 @@ class BreadcrumbLink extends React.Component {
     render() {
         return (
             <li>
-                <button className="link" link="button" onClick={() => {this.props.gotoPage(this.props.item.state)}}>{this.props.item.name}</button>
+                <button className="link" link="button" onClick={() => {this.props.setPage(this.props.item.state)}}>{this.props.item.name}</button>
             </li>
         );
     }

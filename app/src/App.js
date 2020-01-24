@@ -4,7 +4,8 @@ import Header from './header/Header';
 import PokemonIcon from './images/PokemonIcon';
 import PokemonSprite from './images/PokemonSprite';
 import ItemSprite from './images/ItemSprite';
-import GenerationsPage from './pages/GenerationsPage';
+import HomePage from './pages/HomePage';
+import TeamPage from './pages/TeamPage';
 
 class App extends React.Component {
   constructor(props) {
@@ -25,7 +26,7 @@ class App extends React.Component {
     return sub + '\u2026';
   }
 
-  gotoPage = (state) => {
+  setPage = (state) => {
     const previous = this.state.page.current;
     this.setState({
       page: {
@@ -48,6 +49,12 @@ class App extends React.Component {
         ]
       });
     }
+  }
+
+  setTeam = (team) => {
+    this.setState({
+      team: team
+    });
   }
 
   getObjectFromArray = (array, name) => {
@@ -161,15 +168,18 @@ class App extends React.Component {
   renderPage = (page) => {
     switch(page) {
       case this.props.states.HOME:
-        return <GenerationsPage
+        return <HomePage
+          states={this.props.states}
           generations={this.props.generations}
           truncate={this.truncate}
+          setPage={this.setPage}
+          setBreadcrumbs={this.setBreadcrumbs}
+          setTeam={this.setTeam}
           getPokemonFromTeam={this.getPokemonFromTeam}
           renderPokemonImage={this.renderPokemonImage} />;
 
       case this.props.states.TEAMS:
-        // return <TeamsPage />;
-        return null;
+        return <TeamPage />;
 
       default:
         return null;
@@ -182,7 +192,7 @@ class App extends React.Component {
         <Header
           site={this.props.site}
           breadcrumbs={this.state.breadcrumbs}
-          gotoPage={this.gotoPage} />
+          setPage={this.setPage} />
 
         {this.renderPage(this.state.page.current)}
       </div>

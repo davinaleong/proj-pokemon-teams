@@ -15,7 +15,7 @@ class Header extends React.Component {
                 <Title text={this.props.site.title} />
                 <Breadcrumbs
                     breadcrumbs={this.props.breadcrumbs}
-                    gotoPage={this.props.gotoPage} />
+                    setPage={this.props.setPage} />
                 <Copyright copyright={this.props.site.copyright} />
             </header>
         );

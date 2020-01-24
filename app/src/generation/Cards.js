@@ -13,9 +13,13 @@ class Cards extends React.Component {
             teams.push(
                 <Card
                     key={'c'+index}
+                    states={this.props.states}
                     team={team}
                     pokemon={this.props.getPokemonFromTeam(team)}
                     truncate={this.props.truncate}
+                    setPage={this.props.setPage}
+                    setBreadcrumbs={this.props.setBreadcrumbs}
+                    setTeam={this.props.setTeam}
                     renderPokemonImage={this.props.renderPokemonImage} />
             );
         });
