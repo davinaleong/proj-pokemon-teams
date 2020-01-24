@@ -65,18 +65,6 @@ class App extends React.Component {
     return this.getObjectFromArray(this.props.pokemon, name);
   }
 
-  getPokemonFromTeam = (team) => {
-    if (!team.slots) {
-      return null;
-    }
-
-    const pokemon = [];
-    team.slots.forEach(slot => {
-      pokemon.push(this.getPokemon(slot.pokemon));
-    });
-    return pokemon;
-  }
-
   renderPokemonImage = (name, type, key=null) => {
     const pokemon = this.getPokemon(name);
 
@@ -183,6 +171,14 @@ class App extends React.Component {
       default:
         return null;
     }
+  }
+
+  getType = (name) => {
+    return this.getObjectFromArray(this.props.types, name);
+  }
+
+  getNature = (name) => {
+    return this.getObjectFromArray(this.props.natures, name);
   }
 
   render() {
