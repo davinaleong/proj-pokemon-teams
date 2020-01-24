@@ -181,6 +181,10 @@ class App extends React.Component {
     return this.getObjectFromArray(this.props.natures, name);
   }
 
+  getStat = (name) => {
+    return this.getObjectFromArray(this.props.stats, name);
+  }
+
   render() {
     return (
       <div>
