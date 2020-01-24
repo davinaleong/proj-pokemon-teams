@@ -34,7 +34,7 @@ class Rating extends React.Component {
         }
 
         return (
-            <div className="card-rating">{render}</div>
+            <div className="slot-rating">{render}</div>
         );
     }
 }
