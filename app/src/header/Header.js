@@ -14,8 +14,11 @@ class Header extends React.Component {
             <header>
                 <Title text={this.props.site.title} />
                 <Breadcrumbs
+                    states={this.props.states}
                     breadcrumbs={this.props.breadcrumbs}
-                    setPage={this.props.setPage} />
+                    setPage={this.props.setPage}
+                    setBreadcrumbs={this.props.setBreadcrumbs}
+                    setTeam={this.props.setTeam} />
                 <Copyright copyright={this.props.site.copyright} />
             </header>
         );

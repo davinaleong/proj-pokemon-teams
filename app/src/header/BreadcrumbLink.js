@@ -5,10 +5,18 @@ class BreadcrumbLink extends React.Component {
         super(props);
     }
 
+    onClickLink = () => {
+        this.props.setPage(this.props.states.HOME);
+        this.props.setBreadcrumbs('Home');
+        this.props.setTeam(null);
+    }
+
     render() {
         return (
             <li>
-                <button className="link" link="button" onClick={() => {this.props.setPage(this.props.item.state)}}>{this.props.item.name}</button>
+                <button className="link" link="button" onClick={() => {this.onClickLink()}}>
+                    {this.props.item.name}
+                </button>
             </li>
         );
     }

@@ -15,8 +15,11 @@ class Breadcrumbs extends React.Component {
                 items.push(
                     <BreadcrumbLink
                         key={'b'+index}
+                        states={this.props.states}
                         item={breadcrumb}
-                        setPage={this.props.setPage} />
+                        setPage={this.props.setPage}
+                        setBreadcrumbs={this.props.setBreadcrumbs}
+                        setTeam={this.props.setTeam} />
                 );
             } else {
                 items.push(

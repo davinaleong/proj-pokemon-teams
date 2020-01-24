@@ -190,9 +190,12 @@ class App extends React.Component {
     return (
       <div>
         <Header
+          states={this.props.states}
           site={this.props.site}
           breadcrumbs={this.state.breadcrumbs}
-          setPage={this.setPage} />
+          setPage={this.setPage}
+          setBreadcrumbs={this.setBreadcrumbs}
+          setTeam={this.setTeam} />
 
         {this.renderPage(this.state.page.current)}
       </div>
