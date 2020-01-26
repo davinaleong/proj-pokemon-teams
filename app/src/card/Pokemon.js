@@ -19,17 +19,21 @@ class Pokemon extends React.Component {
         return pokemon;
     }
 
-    render() {
+    renderIcons = (team) => {
         const icons = [];
-        const pokemon = this.getPokemonFromTeam(this.props.team);
+        const pokemon = this.getPokemonFromTeam(team);
         pokemon.forEach((creature, index) => {
             icons.push(
                 this.props.renderPokemonImage(creature.name, imageTypes.ICON, 'pi'+index)
             );
         });
 
+        return icons;
+    }
+
+    render() {
         return (
-            <div className="card-pokemon">{icons}</div>
+            <div className="card-pokemon">{this.renderIcons(this.props.team)}</div>
         );
     }
 }

@@ -7,10 +7,10 @@ class Cards extends React.Component {
         super(props);
     }
 
-    render() {
-        const teams = [];
-        this.props.teams.forEach((team, index) => {
-            teams.push(
+    renderCards = (teams) => {
+        const cards = [];
+        teams.forEach((team, index) => {
+            cards.push(
                 <Card
                     key={'c'+index}
                     states={this.props.states}
@@ -25,9 +25,12 @@ class Cards extends React.Component {
                     renderPokemonImage={this.props.renderPokemonImage} />
             );
         });
+        return cards;
+    }
 
+    render() {
         return (
-            <div className="container-gens-cards">{teams}</div>
+            <div className="container-gens-cards">{this.renderCards(this.props.teams)}</div>
         );
     }
 }

@@ -7,10 +7,10 @@ class GenerationsPage extends React.Component {
         super(props);
     }
 
-    render() {
-        const generations = [];
-        this.props.generations.forEach((generation, index) => {
-            generations.push(
+    renderGenerations = (generations) => {
+        const gens = [];
+        generations.forEach((generation, index) => {
+            gens.push(
                 <Generation
                     key={'g'+index}
                     states={this.props.states}
@@ -25,10 +25,13 @@ class GenerationsPage extends React.Component {
                     renderPokemonImage={this.props.renderPokemonImage} />
             );
         });
+        return gens;
+    }
 
+    render() {
         return (
             <main>
-                {generations}
+                {this.renderGenerations(this.props.generations)}
             </main>
         );
     }

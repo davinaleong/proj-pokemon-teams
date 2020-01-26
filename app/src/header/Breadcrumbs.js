@@ -8,9 +8,9 @@ class Breadcrumbs extends React.Component {
         super(props);
     }
 
-    render() {
+    renderItems = (breadcrumbs) => {
         const items = [];
-        this.props.breadcrumbs.forEach((breadcrumb, index) => {
+        breadcrumbs.forEach((breadcrumb, index) => {
             if (breadcrumb.state) {
                 items.push(
                     <BreadcrumbLink
@@ -29,10 +29,13 @@ class Breadcrumbs extends React.Component {
                 );
             }
         });
+        return items;
+    }
 
+    render() {
         return (
             <ul className="breadcrumb">
-                {items}
+                {this.renderItems(this.props.breadcrumbs)}
             </ul>
         );
     }
