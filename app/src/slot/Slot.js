@@ -4,6 +4,7 @@ import SlotName from './SlotName';
 import SlotRole from './SlotRole';
 import PokemonImages from './PokemonImages';
 import SlotNature from './SlotNature';
+import SlotEffortValues from './SlotEffortValues';
 
 class Slot extends React.Component {
     constructor(props) {
@@ -21,6 +22,9 @@ class Slot extends React.Component {
                 <SlotNature
                     nature={this.props.slot.nature}
                     getNature={this.props.getNature}
+                    getStat={this.props.getStat} />
+                <SlotEffortValues
+                    effortValues={this.props.slot.effortValues}
                     getStat={this.props.getStat} />
             </div>
         );

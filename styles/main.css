@@ -490,7 +490,7 @@ a.text-water:hover {
   margin-top: 0.25rem;
 }
 
-.mr-1 {
+.mr-1, ul.effort-values li, ul.individual-values li {
   margin-right: 0.25rem;
 }
 
