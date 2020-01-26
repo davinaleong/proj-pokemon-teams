@@ -5,10 +5,23 @@ import SlotRole from './SlotRole';
 import PokemonImages from './PokemonImages';
 import SlotNature from './SlotNature';
 import SlotEffortValues from './SlotEffortValues';
+import SlotIndividualValues from './SlotIndividualValues';
 
 class Slot extends React.Component {
     constructor(props) {
         super(props);
+    }
+
+    renderIndividualValues = (individualValues) => {
+        if (!individualValues) {
+            return null;
+        }
+
+        return (
+            <SlotIndividualValues
+                individualValues={this.props.slot.individualValues}
+                getStat={this.props.getStat} />
+        );
     }
 
     render() {
@@ -26,6 +39,7 @@ class Slot extends React.Component {
                 <SlotEffortValues
                     effortValues={this.props.slot.effortValues}
                     getStat={this.props.getStat} />
+                {this.renderIndividualValues(this.props.slot.individualValues)}
             </div>
         );
     }
