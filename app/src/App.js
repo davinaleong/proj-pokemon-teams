@@ -177,6 +177,10 @@ class App extends React.Component {
     return this.getObjectFromArray(this.props.types, name);
   }
 
+  getAbility = (name) => {
+    return this.getObjectFromArray(this.props.abilities, name);
+  }
+
   getNature = (name) => {
     return this.getObjectFromArray(this.props.natures, name);
   }
