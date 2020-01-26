@@ -1484,6 +1484,18 @@ ul.breadcrumb li + li:before {
   color: #9e9e9e;
 }
 
+ul.effort-values, ul.individual-values {
+  list-style: none;
+}
+
+ul.effort-values li, ul.individual-values li {
+  display: inline;
+}
+
+ul.effort-values li + li:before, ul.individual-values li + li:before {
+  content: '/\00a0';
+}
+
 .slot-moves-item {
   display: -ms-grid;
   display: grid;
