@@ -166,7 +166,16 @@ class App extends React.Component {
       case this.props.states.TEAM:
         return <TeamPage
           site={this.props.site}
-          team={this.state.team} />;
+          team={this.state.team}
+          imageTypes={this.props.imageTypes}
+          getPokemon={this.getPokemon}
+          renderPokemonImage={this.renderPokemonImage}
+          getType={this.getType}
+          getAbility={this.getAbility}
+          getItem={this.getItem}
+          renderItemImage={this.renderItemImage}
+          getNature={this.getNature}
+          getStat={this.getStat} />;
 
       default:
         return null;
@@ -185,8 +194,8 @@ class App extends React.Component {
     return this.getObjectFromArray(this.props.natures, name);
   }
 
-  getStat = (name) => {
-    return this.getObjectFromArray(this.props.stats, name);
+  getStat = (acronym) => {
+    return this.props.stats.filter(stat => stat.acronym === acronym)[0];
   }
 
   render() {
