@@ -5,12 +5,16 @@ class EffortValues extends React.Component {
         super(props);
     }
 
-    renderItems = (values) => {
+    renderItems = (effortValues) => {
         const items = [];
 
-        values.forEach((value, index) => {
+        effortValues.forEach((effortValue, index) => {
+            const value = effortValue.substring(0, effortValue.indexOf(' '));
+            const acronym = effortValue.substring(effortValue.indexOf(' ') + 1, effortValue.length);
+            const stat = this.props.getStat(acronym).name;
+
             items.push(
-                <li key={'ev'+index}>{value}</li>
+                <li key={'ev'+index}>{value} <span title={stat}>{acronym}</span></li>
             );
         });
 
