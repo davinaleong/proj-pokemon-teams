@@ -10,8 +10,8 @@ class Card extends React.Component {
         super(props);
     }
 
-    renderPokemonIcons = (pokemon) => {
-        if (!pokemon) {
+    renderPokemon = (team) => {
+        if (!team.slots) {
             return null;
         }
 
@@ -33,7 +33,7 @@ class Card extends React.Component {
                     setBreadcrumbs={this.props.setBreadcrumbs}
                     setTeam={this.props.setTeam} />
                 <Gen gen={this.props.team.gen} />
-                {this.renderPokemonIcons(this.props.team.slots)}
+                {this.renderPokemon(this.props.team)}
                 <Rating
                     rating={this.props.team.rating}
                     max={this.props.site.rating.max} />

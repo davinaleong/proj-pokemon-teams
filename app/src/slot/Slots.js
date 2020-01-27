@@ -10,7 +10,7 @@ class Slots extends React.Component {
     renderSlots = (slots) => {
         const slts = [];
         slots.forEach((slot, index) => {
-            slots.push(
+            slts.push(
                 <Slot
                     key={'sl'+index}
                     slot={slot}
@@ -25,6 +25,9 @@ class Slots extends React.Component {
                     getStat={this.props.getStat} />
             );
         });
+        return slts;
+    }
+
         return slts;
     }
 

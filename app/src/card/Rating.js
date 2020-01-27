@@ -9,12 +9,11 @@ class Rating extends React.Component {
         super(props);
     }
 
-    renderRating = (rating) => {
-        let render = <Unrated />
-
+    renderRating = (rating, max) => {
+        let render = <Unrated />;
         if (rating && !isNaN(rating)) {
-            if (rating > this.props.max) {
-                rating = this.props.max;
+            if (rating > max) {
+                rating = max;
             }
 
             render = [];
@@ -24,7 +23,7 @@ class Rating extends React.Component {
                 );
             }
 
-            const checked = this.props.max - rating;
+            const checked = max - rating;
             for (let j = 0; j < checked; ++j) {
                 render.push(
                     <Star key={'s'+j} />
@@ -36,7 +35,9 @@ class Rating extends React.Component {
 
     render() {
         return (
-            <div className="card-rating">{this.renderRating(this.props.rating)}</div>
+            <div className="card-rating">
+                {this.renderRating(this.props.rating, this.props.max)}
+            </div>
         );
     }
 }

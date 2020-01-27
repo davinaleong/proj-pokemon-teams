@@ -30,7 +30,9 @@ class Cards extends React.Component {
 
     render() {
         return (
-            <div className="container-gens-cards">{this.renderCards(this.props.teams)}</div>
+            <div className="container-gens-cards">
+                {this.renderCards(this.props.teams)}
+            </div>
         );
     }
 }
