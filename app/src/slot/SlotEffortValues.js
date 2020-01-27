@@ -1,7 +1,7 @@
 import React from 'react';
 
 import SlotTitle from './SlotTitle';
-import EffortValues from './EffiortValues';
+import EffortValues from './EffortValues';
 
 class SlotEffortValues extends React.Component {
     constructor(props) {

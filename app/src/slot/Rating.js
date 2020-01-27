@@ -30,7 +30,7 @@ class Rating extends React.Component {
                 );
             }
         }
-        return this.render;
+        return render;
     }
 
     render() {
