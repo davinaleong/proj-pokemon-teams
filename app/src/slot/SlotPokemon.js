@@ -1,17 +1,17 @@
 import React from 'react';
 
-class Pokemon extends React.Component {
+class SlotPokemon extends React.Component {
     constructor(props) {
         super(props);
     }
 
     render() {
         return (
-            <div>
-                Pokemon Images
+            <div className="slot-pokemon">
+                Slot-Pokemon
             </div>
         );
     }
 }
 
-export default Pokemon;
+export default SlotPokemon;

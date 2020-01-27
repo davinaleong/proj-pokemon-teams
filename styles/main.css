@@ -616,7 +616,7 @@ ul.moves li {
   margin-right: 1rem;
 }
 
-.mb-3, ul.breadcrumb, .container-gens, .pokemon-images, .slot-nature,
+.mb-3, ul.breadcrumb, .container-gens, .slot-pokemon, .slot-nature,
 .slot-effort-values,
 .slot-individual-values {
   margin-bottom: 1rem;
@@ -1450,7 +1450,7 @@ ul.breadcrumb li + li:before {
   font-size: 1.5rem;
 }
 
-.pokemon-images {
+.slot-pokemon {
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'cell-image cell-arrow cell-image-mega';

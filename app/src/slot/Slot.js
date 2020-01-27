@@ -2,7 +2,7 @@ import React from 'react';
 
 import SlotName from './SlotName';
 import SlotRole from './SlotRole';
-import PokemonImages from './Pokemon';
+import PokemonImages from './SlotPokemon';
 import SlotNature from './SlotNature';
 import SlotEffortValues from './SlotEffortValues';
 import SlotIndividualValues from './SlotIndividualValues';
