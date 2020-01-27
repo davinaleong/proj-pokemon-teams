@@ -127,7 +127,7 @@ const moves = [
         "type": "Dragon"
     }, {
         "name": "Petal Blizzard",
-        "type": "Dark"
+        "type": "Grass"
     }, {
         "name": "Poison Jab",
         "type": "Poison"
@@ -278,6 +278,39 @@ const moves = [
     }, {
         "name": "Hidden Power (Water)",
         "type": "Water"
+    }, {
+        "name": "Dazzling Gleam",
+        "type": "Fairy"
+    }, {
+        "name": "Flare Blitz",
+        "type": "Fire"
+    }, {
+        "name": "Shadow Bone",
+        "type": "Ghost"
+    }, {
+        "name": "Bonemerang",
+        "type": "Ground"
+    }, {
+        "name": "Stealth Rocks",
+        "type": "Rock"
+    }, {
+        "name": "Aura Sphere",
+        "type": "Fighting"
+    }, {
+        "name": "Extreme Speed",
+        "type": "Normal"
+    }, {
+        "name": "Phantom Force",
+        "type": "Ghost"
+    }, {
+        "name": "Dragon Claw",
+        "type": "Dragon"
+    }, {
+        "name": "Shadow Claw",
+        "type": "Ghost"
+    }, {
+        "name": "Anchor Shot",
+        "type": "Steel"
     }
 ];
 

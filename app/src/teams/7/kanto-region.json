@@ -34,7 +34,7 @@
                 "252 S"
             ],
             "moves": [
-                ["Volt Tacklet"],
+                ["Volt Tackle"],
                 ["Grass Knot"],
                 ["Surf"],
                 ["Volt Switch"]
@@ -78,7 +78,10 @@
         }, {
             "name": "Special Sweeper",
             "pokemon": "Charizard",
-            "mega": true,
+            "mega": {
+                "name": "Y",
+                "ability": "Drought"
+            },
             "ability": "Blaze",
             "abilityMega": "Drought",
             "item": "Charizardite Y",
@@ -89,7 +92,7 @@
                 "252 S"
             ],
             "moves": [
-                ["Flamethrower"],
+                ["Flamethrower", "Fire Blast"],
                 ["Solar Beam"],
                 ["Focus Blast"],
                 ["Roost"]
