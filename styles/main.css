@@ -556,7 +556,7 @@ ul.moves li {
   margin-right: 0.5rem;
 }
 
-.mb-2, .team-card, .team-slot, .cell-image, .cell-types, .slot-title, .cell-moves p {
+.mb-2, .team-card, .team-slot, .cell-image, .cell-types, .slot-title, .cell-moves ul.moves {
   margin-bottom: 0.5rem;
 }
 
@@ -616,7 +616,9 @@ ul.moves li {
   margin-right: 1rem;
 }
 
-.mb-3, ul.breadcrumb, .container-gens, .pokemon-images, .slot-nature, .slot-effort-values, .slot-individual-values {
+.mb-3, ul.breadcrumb, .container-gens, .pokemon-images, .slot-nature,
+.slot-effort-values,
+.slot-individual-values {
   margin-bottom: 1rem;
 }
 

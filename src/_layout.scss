@@ -149,7 +149,9 @@ main {
     @extend .mb-2;
 }
 
-.slot-nature, .slot-effort-values, .slot-individual-values {
+.slot-nature,
+.slot-effort-values,
+.slot-individual-values {
     @extend .mb-3;
 }
 
@@ -190,7 +192,8 @@ ul.moves li+li:before {
     grid-area: cell-moves;
 }
 
-.cell-moves p {
+.cell-moves
+ul.moves {
     @extend .mb-2;
 }
 
