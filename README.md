@@ -3,7 +3,6 @@ Pokemon-Teams App
 
 ## Current TODO:
 
-1. Refactor render code
 1. Render `TEAM` page
 
 ## Tasks
