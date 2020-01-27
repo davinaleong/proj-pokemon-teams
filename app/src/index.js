@@ -13,6 +13,7 @@ import types from './data/types';
 import abilities from './data/abilities';
 import natures from './data/natures';
 import stats from './data/stats';
+import moves from './data/moves';
 import items from './data/items';
 
 import generations from './data/generations';
@@ -28,6 +29,7 @@ ReactDOM.render(
         abilities={abilities}
         natures={natures}
         stats={stats}
+        moves={moves}
         items={items}
 
         generations={generations}

@@ -172,10 +172,10 @@ class App extends React.Component {
           renderPokemonImage={this.renderPokemonImage}
           getType={this.getType}
           getAbility={this.getAbility}
-          getItem={this.getItem}
           renderItemImage={this.renderItemImage}
           getNature={this.getNature}
-          getStat={this.getStat} />;
+          getStat={this.getStat}
+          getMove={this.getMove} />;
 
       default:
         return null;
@@ -196,6 +196,10 @@ class App extends React.Component {
 
   getStat = (acronym) => {
     return this.props.stats.filter(stat => stat.acronym === acronym)[0];
+  }
+
+  getMove = (name) => {
+    return this.getObjectFromArray(this.props.moves, name);
   }
 
   render() {

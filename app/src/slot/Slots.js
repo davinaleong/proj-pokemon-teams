@@ -19,10 +19,10 @@ class Slots extends React.Component {
                     renderPokemonImage={this.props.renderPokemonImage}
                     getType={this.props.getType}
                     getAbility={this.props.getAbility}
-                    getItem={this.props.getItem}
                     renderItemImage={this.props.renderItemImage}
                     getNature={this.props.getNature}
-                    getStat={this.props.getStat} />
+                    getStat={this.props.getStat}
+                    getMove={this.props.getMove} />
             );
         });
         return slts;

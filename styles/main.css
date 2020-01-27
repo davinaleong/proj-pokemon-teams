@@ -490,7 +490,9 @@ a.text-water:hover {
   margin-top: 0.25rem;
 }
 
-.mr-1, ul.effort-values li, ul.individual-values li {
+.mr-1, ul.effort-values li,
+ul.individual-values li,
+ul.moves li {
   margin-right: 0.25rem;
 }
 
@@ -1484,15 +1486,22 @@ ul.breadcrumb li + li:before {
   color: #9e9e9e;
 }
 
-ul.effort-values, ul.individual-values {
+ul.effort-values,
+ul.individual-values,
+ul.moves {
   list-style: none;
 }
 
-ul.effort-values li, ul.individual-values li {
+ul.effort-values li,
+ul.individual-values li,
+ul.moves li {
   display: inline;
 }
 
-ul.effort-values li + li:before, ul.individual-values li + li:before {
+ul.effort-values li + li:before,
+ul.individual-values li + li:before,
+ul.moves li + li:before {
+  color: #212121;
   content: '/\00a0';
 }
 

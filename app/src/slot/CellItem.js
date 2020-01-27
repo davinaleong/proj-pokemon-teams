@@ -8,7 +8,6 @@ class CellItem extends React.Component {
     }
 
     renderItem = (item) => {
-        const itemData = this.props.getItem(item);
         return this.props.renderItemImage(item);
     }
 

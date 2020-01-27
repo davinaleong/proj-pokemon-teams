@@ -44,8 +44,8 @@ class Slot extends React.Component {
                 <SlotMovesItem
                     moves={this.props.slot.moves}
                     item={this.props.slot.item}
-                    getItem={this.props.getItem}
-                    renderItemImage={this.props.renderItemImage} />
+                    renderItemImage={this.props.renderItemImage}
+                    getMove={this.props.getMove} />
             </div>
         );
     }

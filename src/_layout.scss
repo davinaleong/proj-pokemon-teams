@@ -159,16 +159,23 @@ main {
     @extend .mb-2;
 }
 
-ul.effort-values, ul.individual-values {
+ul.effort-values,
+ul.individual-values,
+ul.moves {
     list-style: none;
 }
 
-ul.effort-values li, ul.individual-values li {
+ul.effort-values li,
+ul.individual-values li,
+ul.moves li {
     display: inline;
     @extend .mr-1;
 }
 
-ul.effort-values li+li:before, ul.individual-values li+li:before {
+ul.effort-values li+li:before,
+ul.individual-values li+li:before,
+ul.moves li+li:before {
+    color: color('gray', '900');
     content: '/\00a0';
 }
 

@@ -11,10 +11,11 @@ class SlotMovesItem extends React.Component {
     render() {
         return (
             <div className="slot-moves-item">
-                <CellMoves />
+                <CellMoves
+                    moves={this.props.moves}
+                    getMove={this.props.getMove} />
                 <CellItem
                     item={this.props.item}
-                    getItem={this.props.getItem}
                     renderItemImage={this.props.renderItemImage} />
             </div>
         );
