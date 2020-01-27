@@ -9,10 +9,8 @@ class Rating extends React.Component {
         super(props);
     }
 
-    render() {
-        let rating = this.props.rating;
-        let render = <Unrated />
-
+    renderRating = (rating) => {
+        let render = <Unrated />;
         if (rating && !isNaN(rating)) {
             if (rating > this.props.max) {
                 rating = this.props.max;
@@ -32,9 +30,14 @@ class Rating extends React.Component {
                 );
             }
         }
+        return render;
+    }
 
+    render() {
         return (
-            <div className="card-rating">{render}</div>
+            <div className="card-rating">
+                {this.renderRating(this.props.rating)}
+            </div>
         );
     }
 }

@@ -9,10 +9,9 @@ class Team extends React.Component {
         super(props);
     }
 
-    render() {
-        let slots = null;
-        if (this.props.team.slots && Array.isArray(this.props.team.slots)) {
-            slots = <Slots
+    renderSlots = (team) => {
+        if (team.slots && Array.isArray(team.slots)) {
+            return <Slots
                 slots={this.props.team.slots}
                 imageTypes={this.props.imageTypes}
                 getPokemon={this.props.getPokemon}
@@ -23,15 +22,19 @@ class Team extends React.Component {
                 renderItemImage={this.props.renderItemImage}
                 getNature={this.props.getNature}
                 getStat={this.props.getStat} />;
+        } else {
+            return null;
         }
+    }
 
+    render() {
         return (
             <section className="container-team">
                 <Title text={this.props.team.name} />
                 <Subcontent
                     site={this.props.site}
                     team={this.props.team} />
-                {slots}
+                {this.renderSlots(this.props.team)}
             </section>
         );
     }

@@ -7,10 +7,10 @@ class Slots extends React.Component {
         super(props);
     }
 
-    render() {
-        const slots = [];
-        this.props.slots.forEach((slot, index) => {
-            slots.push(
+    renderSlots = (slots) => {
+        const slts = [];
+        slots.forEach((slot, index) => {
+            slts.push(
                 <Slot
                     key={'sl'+index}
                     slot={slot}
@@ -26,9 +26,13 @@ class Slots extends React.Component {
             );
         });
 
+        return slts;
+    }
+
+    render() {
         return (
             <section className="container-team-slots">
-                {slots}
+                {this.renderSlots(this.props.slots)}
             </section>
         );
     }
