@@ -28,9 +28,6 @@ class Slots extends React.Component {
         return slts;
     }
 
-        return slts;
-    }
-
     render() {
         return (
             <section className="container-team-slots">
