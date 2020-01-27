@@ -1,6 +1,6 @@
 import React from 'react';
 
-class PokemonImages extends React.Component {
+class Pokemon extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -14,4 +14,4 @@ class PokemonImages extends React.Component {
     }
 }
 
-export default PokemonImages;
+export default Pokemon;
