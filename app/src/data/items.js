@@ -93,6 +93,9 @@ const items = [
         "name": "Choice Scarf",
         "image": "choice-scarf.png"
     }, {
+        "name": "Choice Specs",
+        "image": "choice-specs.png"
+    }, {
         "name": "Damp Rock",
         "image": "damp-rock.png"
     }, {
@@ -173,6 +176,12 @@ const items = [
     }, {
         "name": "Rocky Helmet",
         "image": "rocky-helmet.png"
+    }, {
+        "name": "Thick Club",
+        "image": "thick-club.png"
+    }, {
+        "name": "Lucarionite",
+        "image": "lucarionite.png"
     }
 ];
 

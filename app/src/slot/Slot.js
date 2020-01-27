@@ -6,6 +6,7 @@ import PokemonImages from './PokemonImages';
 import SlotNature from './SlotNature';
 import SlotEffortValues from './SlotEffortValues';
 import SlotIndividualValues from './SlotIndividualValues';
+import SlotMovesItem from './SlotMovesItem';
 
 class Slot extends React.Component {
     constructor(props) {
@@ -40,6 +41,11 @@ class Slot extends React.Component {
                     effortValues={this.props.slot.effortValues}
                     getStat={this.props.getStat} />
                 {this.renderIndividualValues(this.props.slot.individualValues)}
+                <SlotMovesItem
+                    moves={this.props.slot.moves}
+                    item={this.props.slot.item}
+                    getItem={this.props.getItem}
+                    renderItemImage={this.props.renderItemImage} />
             </div>
         );
     }
