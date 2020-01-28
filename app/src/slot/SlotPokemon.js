@@ -1,5 +1,7 @@
 import React from 'react';
 
+import CellImage from './CellImage';
+
 class SlotPokemon extends React.Component {
     constructor(props) {
         super(props);
@@ -8,7 +10,13 @@ class SlotPokemon extends React.Component {
     render() {
         return (
             <div className="slot-pokemon">
-                Slot-Pokemon
+                <CellImage
+                    pokemon={this.props.pokemon}
+                    imageTypes={this.props.imageTypes}
+                    getPokemon={this.props.getPokemon}
+                    renderPokemonImage={this.props.renderPokemonImage}
+                    getType={this.props.getType}
+                    getAbility={this.props.getAbility} />
             </div>
         );
     }

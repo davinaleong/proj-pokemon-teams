@@ -2,7 +2,7 @@ import React from 'react';
 
 import SlotName from './SlotName';
 import SlotRole from './SlotRole';
-import PokemonImages from './SlotPokemon';
+import SlotPokemon from './SlotPokemon';
 import SlotNature from './SlotNature';
 import SlotEffortValues from './SlotEffortValues';
 import SlotIndividualValues from './SlotIndividualValues';
@@ -32,7 +32,14 @@ class Slot extends React.Component {
                     name={this.props.slot.pokemon}/>
                 <SlotRole
                     role={this.props.slot.name} />
-                <PokemonImages />
+                <SlotPokemon
+                    pokemon={this.props.slot.pokemon}
+                    mega={this.props.mega}
+                    imageTypes={this.props.imageTypes}
+                    getPokemon={this.props.getPokemon}
+                    renderPokemonImage={this.props.renderPokemonImage}
+                    getType={this.props.getType}
+                    getAbility={this.props.getAbility} />
                 <SlotNature
                     nature={this.props.slot.nature}
                     getNature={this.props.getNature}
