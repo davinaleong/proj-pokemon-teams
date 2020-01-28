@@ -6,6 +6,7 @@ import PokemonSprite from './images/PokemonSprite';
 import ItemSprite from './images/ItemSprite';
 import HomePage from './pages/HomePage';
 import TeamPage from './pages/TeamPage';
+import BackToTopButton from './buttons/BackToTopButton';
 
 class App extends React.Component {
   constructor(props) {
@@ -235,6 +236,8 @@ class App extends React.Component {
           setTeam={this.setTeam} />
 
         {this.renderPage(this.state.page.current)}
+
+        <BackToTopButton />
       </div>
     );
   }
