@@ -102,12 +102,12 @@ class App extends React.Component {
     switch(type) {
       case this.props.imageTypes.SPRITE:
         if (mega) {
-          const megaPokemon = pokemon.megas[mega];
+          const megaPokemon = pokemon.megas.filter(megaData => megaData.name === mega.name)[0];
 
           return <PokemonSprite
             key={key}
             folder={this.props.site.assets.pokemon.sprites}
-            filename={megaPokemon.sprite}
+            filename={megaPokemon.images.sprite}
             alt={pokemon.name} />;
         }
 
@@ -119,12 +119,13 @@ class App extends React.Component {
 
       case this.props.imageTypes.ANIMATED:
         if (mega) {
-          const megaPokemon = pokemon.megas[mega];
+          const megaPokemon = pokemon.megas.filter(megaData => megaData.name === mega.name)[0];
+          console.log(megaPokemon);
 
           return <PokemonSprite
             key={key}
             folder={this.props.site.assets.pokemon.sprites}
-            filename={megaPokemon.animated}
+            filename={megaPokemon.images.animated}
             alt={pokemon.name} />;
         }
 

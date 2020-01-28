@@ -1,7 +1,7 @@
 import React from 'react';
 
-import CellAbility from './CellAbility';
-import CellTypes from './CellTypes';
+import CellTypesMega from './CellTypesMega';
+import CellAbilityMega from './CellAbilityMega';
 
 class CellImageMega extends React.Component {
     constructor(props) {
@@ -19,11 +19,12 @@ class CellImageMega extends React.Component {
                     this.props.slot.pokemon,
                     this.props.imageTypes.ANIMATED,
                     this.props.slot.mega)}
-                <CellTypes
+                <CellTypesMega
                     pokemon={this.props.slot.pokemon}
+                    mega={this.props.slot.mega}
                     getPokemon={this.props.getPokemon}
                     getType={this.props.getType} />
-                <CellAbility
+                <CellAbilityMega
                     ability={this.props.slot.mega.ability}
                     getAbility={this.props.getAbility} />
             </div>

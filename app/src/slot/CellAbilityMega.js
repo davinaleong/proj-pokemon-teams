@@ -2,7 +2,7 @@ import React from 'react';
 
 import abilities from '../data/abilities';
 
-class CellAbility extends React.Component {
+class CellAbilityMega extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -25,4 +25,4 @@ class CellAbility extends React.Component {
     }
 }
 
-export default CellAbility;
+export default CellAbilityMega;
