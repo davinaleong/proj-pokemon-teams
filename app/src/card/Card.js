@@ -32,7 +32,7 @@ class Card extends React.Component {
                     setPage={this.props.setPage}
                     setBreadcrumbs={this.props.setBreadcrumbs}
                     setTeam={this.props.setTeam} />
-                <Gen gen={this.props.team.gen} />
+                <Gen gen={this.props.team.generation} />
                 {this.renderPokemon(this.props.team)}
                 <Rating
                     rating={this.props.team.rating}
