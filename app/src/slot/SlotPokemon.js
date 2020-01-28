@@ -1,6 +1,7 @@
 import React from 'react';
 
 import CellImage from './CellImage';
+import CellArrow from './CellArrow';
 
 class SlotPokemon extends React.Component {
     constructor(props) {
@@ -17,6 +18,7 @@ class SlotPokemon extends React.Component {
                     renderPokemonImage={this.props.renderPokemonImage}
                     getType={this.props.getType}
                     getAbility={this.props.getAbility} />
+                <CellArrow />
             </div>
         );
     }

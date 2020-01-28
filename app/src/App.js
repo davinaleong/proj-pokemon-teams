@@ -65,7 +65,7 @@ class App extends React.Component {
     return this.getObjectFromArray(this.props.pokemon, name);
   }
 
-  renderPokemonImage = (name, type, key=null) => {
+  renderPokemonImage = (name, type, key=null, mega=null) => {
     const pokemon = this.getPokemon(name);
 
     if (!pokemon || !pokemon.images) {
@@ -101,6 +101,16 @@ class App extends React.Component {
 
     switch(type) {
       case this.props.imageTypes.SPRITE:
+        if (mega) {
+          const megaPokemon = pokemon.megas[mega];
+
+          return <PokemonSprite
+            key={key}
+            folder={this.props.site.assets.pokemon.sprites}
+            filename={megaPokemon.sprite}
+            alt={pokemon.name} />;
+        }
+
         return <PokemonSprite
           key={key}
           folder={this.props.site.assets.pokemon.sprites}
@@ -108,6 +118,16 @@ class App extends React.Component {
           alt={pokemon.name} />;
 
       case this.props.imageTypes.ANIMATED:
+        if (mega) {
+          const megaPokemon = pokemon.megas[mega];
+
+          return <PokemonSprite
+            key={key}
+            folder={this.props.site.assets.pokemon.sprites}
+            filename={megaPokemon.animated}
+            alt={pokemon.name} />;
+        }
+
         return <PokemonSprite
           key={key}
           folder={this.props.site.assets.pokemon.sprites}
