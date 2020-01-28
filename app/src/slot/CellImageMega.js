@@ -17,9 +17,8 @@ class CellImageMega extends React.Component {
             <div className="cell-image-mega">
                 {this.renderImage(
                     this.props.slot.pokemon,
-                    this.props.imageTypes.ANIMATED),
-                    this.props.slot.mega
-                }
+                    this.props.imageTypes.ANIMATED,
+                    this.props.slot.mega)}
                 <CellTypes
                     pokemon={this.props.slot.pokemon}
                     getPokemon={this.props.getPokemon}
