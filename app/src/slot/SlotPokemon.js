@@ -11,7 +11,7 @@ class SlotPokemon extends React.Component {
         return (
             <div className="slot-pokemon">
                 <CellImage
-                    pokemon={this.props.pokemon}
+                    slot={this.props.slot}
                     imageTypes={this.props.imageTypes}
                     getPokemon={this.props.getPokemon}
                     renderPokemonImage={this.props.renderPokemonImage}

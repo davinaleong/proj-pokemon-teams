@@ -33,7 +33,7 @@ class Slot extends React.Component {
                 <SlotRole
                     role={this.props.slot.name} />
                 <SlotPokemon
-                    pokemon={this.props.slot.pokemon}
+                    slot={this.props.slot}
                     mega={this.props.mega}
                     imageTypes={this.props.imageTypes}
                     getPokemon={this.props.getPokemon}

@@ -13,6 +13,20 @@ const abilities = [
         "name": "Torrent"
     }, {
         "name": "Unnerve"
+    }, {
+        "name": "Choice Specs"
+    }, {
+        "name": "Magnet Pull"
+    }, {
+        "name": "Rough Skin"
+    }, {
+        "name": "Rock Head"
+    }, {
+        "name": "Steadfast"
+    }, {
+        "name": "Adaptability"
+    }, {
+        "name": "Steelworker"
     }
 ];
 
