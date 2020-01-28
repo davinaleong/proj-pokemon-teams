@@ -1,0 +1,122 @@
+{
+    "name": "Mega Beedrill",
+    "rating": "Unrated",
+    "generation": "7",
+    "slots": [
+        {
+            "name": "Mega Pokémon",
+            "pokemon": "Beedrill",
+            "mega": {
+                "name": "mega",
+                "ability": "Adaptability"
+            },
+            "ability": "Swarm",
+            "item": "Beedrillite",
+            "nature": "Jolly",
+            "effortValues": [
+                "252 A",
+                "4 D",
+                "252 S"
+            ],
+            "moves": [
+                ["X-Scissor"],
+                ["Poison Jab"],
+                ["Knock Off"],
+                ["Drill Run"]
+            ]
+        }, {
+            "name": "Setup + Support",
+            "pokemon": "Ferrothorn",
+            "mega": null,
+            "ability": "Iron Barbs",
+            "item": "Leftovers",
+            "nature": "Sassy",
+            "effortValues": [
+                "252 HP",
+                "24 D",
+                "232 SD"
+            ],
+            "individualValues": [
+                "0 S"
+            ],
+            "moves": [
+                ["Stealth Rocks"],
+                ["Leech Seed"],
+                ["Gyro Ball"],
+                ["Power Whip"]
+            ]
+        }, {
+            "name": "Rapid Spin",
+            "pokemon": "Tentacruel",
+            "mega": null,
+            "ability": "Clear Body",
+            "item": "Black Sludge",
+            "nature": "Timid",
+            "effortValues": [
+                "252 HP",
+                "112 D",
+                "144 S"
+            ],
+            "moves": [
+                ["Sludge Bomb"],
+                ["Scald"],
+                ["Haze"],
+                ["Rapid Spin"]
+            ]
+        }, {
+            "name": "Physical Sweeper",
+            "pokemon": "Garchomp",
+            "mega": null,
+            "ability": "Rough Skin",
+            "item": "Choice Band",
+            "nature": "Naughty",
+            "effortValues": [
+                "252 A",
+                "4 SA",
+                "252 S"
+            ],
+            "moves": [
+                ["Outrage", "Dragon Rush"],
+                ["Earthquake"],
+                ["Stone Edge"],
+                ["Fire Blast"]
+            ]
+        }, {
+            "name": "Special Sweeper",
+            "pokemon": "Hydreigon",
+            "mega": null,
+            "ability": "Levitate",
+            "item": "Choice Specs",
+            "nature": "Modest",
+            "effortValues": [
+                "4 HP",
+                "252 SA",
+                "252 S"
+            ],
+            "moves": [
+                ["Draco Meteor", "Dragon Pulse"],
+                ["Dark Pulse"],
+                ["Surf"],
+                ["Flash Cannon"]
+            ]
+        }, {
+            "name": "Defensive Pivot",
+            "pokemon": "Heatran",
+            "mega": null,
+            "ability": "Flash Fire",
+            "item": "Grassium Z",
+            "nature": "Modest",
+            "effortValues": [
+                "252 HP",
+                "252 A",
+                "4 D"
+            ],
+            "moves": [
+                ["Magma Storm"],
+                ["Earth Power"],
+                ["Solar Beam"],
+                ["Will-O-Wisp"]
+            ]
+        }
+    ]
+}

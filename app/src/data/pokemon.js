@@ -162,6 +162,56 @@ const pokemon = [
             "sprite": "dhelmise.png",
             "icon": "dhelmise-icon.png"
         }
+    }, {
+        "name": "Beedrill",
+        "types": ["Bug", "Poison"],
+        "images": {
+            "animated": "beedrill.gif",
+            "sprite": "beedrill.png",
+            "icon": "beedrill-icon.png"
+        },
+        "megas": [
+            {
+                "name": "mega",
+                "types": ["Bug", "Poison"],
+                "images": {
+                    "animated": "beedrill_mega.gif",
+                    "sprite": "beedrill_mega.png"
+                }
+            }
+        ]
+    }, {
+        "name": "Ferrothorn",
+        "types": ["Grass", "Steel"],
+        "images": {
+            "animated": "ferrothorn.gif",
+            "sprite": "ferrothorn.png",
+            "icon": "ferrothorn-icon.png"
+        }
+    }, {
+        "name": "Tentacruel",
+        "types": ["Water", "Poison"],
+        "images": {
+            "animated": "tentacruel.gif",
+            "sprite": "tentacruel.png",
+            "icon": "tentacruel-icon.png"
+        }
+    }, {
+        "name": "Hydreigon",
+        "types": ["Dark", "Dragon"],
+        "images": {
+            "animated": "hydreigon.gif",
+            "sprite": "hydreigon.png",
+            "icon": "hydreigon-icon.png"
+        }
+    }, {
+        "name": "Heatran",
+        "types": ["Fire", "Steel"],
+        "images": {
+            "animated": "heatran.gif",
+            "sprite": "heatran.png",
+            "icon": "heatran-icon.png"
+        }
     }
 ];
 

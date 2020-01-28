@@ -27,6 +27,10 @@ const abilities = [
         "name": "Adaptability"
     }, {
         "name": "Steelworker"
+    }, {
+        "name": "Swarm"
+    }, {
+        "name": ""
     }
 ];
 

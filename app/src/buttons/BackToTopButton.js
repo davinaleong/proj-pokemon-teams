@@ -7,8 +7,8 @@ class BackToTopButton extends React.Component {
 
     render() {
         return (
-            <button type="button" class="top" onClick={() => {window.location.href = './#top'}}>
-                <i class="fas fa-chevron-up"></i>
+            <button type="button" className="top" onClick={() => {window.location.href = './#top'}}>
+                <i className="fas fa-chevron-up"></i>
             </button>
         );
     }
