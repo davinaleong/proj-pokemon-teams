@@ -1,0 +1,119 @@
+{
+    "name": "Monotype, Bug",
+    "generation": "7",
+    "rating": "Unrated",
+    "slots": [
+        {
+            "name": "Lead + Support",
+            "pokemon": "Forretress",
+            "mega": null,
+            "ability": "Sturdy",
+            "item": "Leftovers",
+            "nature": "Relaxed",
+            "effortValues": [
+                "4 HP",
+                "252 A",
+                "252 S"
+            ],
+            "moves": [
+                ["Stealth Rocks"],
+                ["Spikes"],
+                ["Rapid Spin"],
+                ["Gyro Ball"]
+            ]
+        }, {
+            "name": "Physical Sweeper",
+            "pokemon": "Scizor",
+            "mega": {
+                "name": "mega",
+                "ability": "Technician"
+            },
+            "ability": "Light Metal",
+            "item": "Scizorite",
+            "nature": "Adamant",
+            "effortValues": [
+                "252 A",
+                "4 D",
+                "252 S"
+            ],
+            "moves": [
+                ["Swords Dance"],
+                ["Bullet Punch"],
+                ["Bug Bite"],
+                ["Superpower"]
+            ]
+        }, {
+            "name": "Special Sweeper",
+            "pokemon": "Volcarona",
+            "mega": null,
+            "ability": "Flame Body",
+            "item": "Focus Sash",
+            "nature": "Modest",
+            "effortValues": [
+                "4 HP",
+                "252 SA",
+                "252 S"
+            ],
+            "moves": [
+                ["Quiver Dance"],
+                ["Fire Blast"],
+                ["Bug Buzz"],
+                ["Giga Drain"]
+            ]
+        }, {
+            "name": "Choice-Band Sweeper",
+            "pokemon": "Buzzwole",
+            "mega": null,
+            "ability": "Beast Boost",
+            "item": "Choice Band",
+            "nature": "Adamant",
+            "effortValues": [
+                "4 HP",
+                "252 A",
+                "252 S"
+            ],
+            "moves": [
+                ["Earthquake"],
+                ["Stone Edge"],
+                ["Bounce"],
+                ["Hammer Arm"]
+            ]
+        }, {
+            "name": "Choice-Specs Sweeper",
+            "pokemon": "Vikavolt",
+            "mega": null,
+            "ability": "Levitate",
+            "item": "Choice Specs",
+            "nature": "Modest",
+            "effortValues": [
+                "4 HP",
+                "252 SA",
+                "252 S"
+            ],
+            "moves": [
+                ["Thunderbolt"],
+                ["Bug Buzz"],
+                ["Energy Ball"],
+                ["Air Slash"]
+            ]
+        }, {
+            "name": "Bulky Physical Attacker",
+            "pokemon": "Golisopod",
+            "mega": null,
+            "ability": "Emergency Exit",
+            "item": "Sitrus Berry",
+            "nature": "Adamant",
+            "effortValues": [
+                "252 HP",
+                "252 A",
+                "4 D"
+            ],
+            "moves": [
+                ["Bulk Up"],
+                ["Leech Life"],
+                ["Liquidation"],
+                ["Dual Chop"]
+            ]
+        }
+    ]
+}

@@ -121,7 +121,6 @@ class App extends React.Component {
       case this.props.imageTypes.ANIMATED:
         if (mega) {
           const megaPokemon = pokemon.megas.filter(megaData => megaData.name === mega.name)[0];
-          console.log(megaPokemon);
 
           return <PokemonSprite
             key={key}

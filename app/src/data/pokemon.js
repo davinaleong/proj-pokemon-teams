@@ -212,6 +212,64 @@ const pokemon = [
             "sprite": "heatran.png",
             "icon": "heatran-icon.png"
         }
+    }, {
+        "name": "Forretress",
+        "types": ["Bug", "Steel"],
+        "images": {
+            "animated": "forretress.gif",
+            "sprite": "forretress.png",
+            "icon": "forretress-icon.png"
+        }
+    }, {
+        "name": "Scizor",
+        "types": ["Bug", "Steel"],
+        "images": {
+            "animated": "scizor.gif",
+            "sprite": "scizor.png",
+            "icon": "scizor-icon.png"
+        },
+        "megas": [
+            {
+                "name": "mega",
+                "types": ["Bug", "Steel"],
+                "images": {
+                    "animated": "scizor_mega.gif",
+                    "sprite": "scizor_mega.png"
+                }
+            }
+        ]
+    }, {
+        "name": "Volcarona",
+        "types": ["Bug", "Fire"],
+        "images": {
+            "animated": "volcarona.gif",
+            "sprite": "volcarona.png",
+            "icon": "volcarona-icon.png"
+        }
+    }, {
+        "name": "Buzzwole",
+        "types": ["Bug", "Fighting"],
+        "images": {
+            "animated": "buzzwole.gif",
+            "sprite": "buzzwole.png",
+            "icon": "buzzwole-icon.png"
+        }
+    }, {
+        "name": "Vikavolt",
+        "types": ["Bug", "Electric"],
+        "images": {
+            "animated": "vikavolt.gif",
+            "sprite": "vikavolt.png",
+            "icon": "vikavolt-icon.png"
+        }
+    }, {
+        "name": "Golisopod",
+        "types": ["Bug", "Water"],
+        "images": {
+            "animated": "golisopod.gif",
+            "sprite": "golisopod.png",
+            "icon": "golisopod-icon.png"
+        }
     }
 ];
 

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import SlotTitle from './SlotTitle';
+
 class CellTypes extends React.Component {
     constructor(props) {
         super(props);
@@ -29,9 +31,10 @@ class CellTypes extends React.Component {
 
     render() {
         return (
-            <p className="cell-types">
+            <div className="cell-types">
+                <SlotTitle title={'Types'} />
                 {this.renderTypes(this.props.pokemon)}
-            </p>
+            </div>
         );
     }
 }

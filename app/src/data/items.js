@@ -182,6 +182,9 @@ const items = [
     }, {
         "name": "Lucarionite",
         "image": "lucarionite.png"
+    }, {
+        "name": "Scizorite",
+        "image": "scizorite.png"
     }
 ];
 

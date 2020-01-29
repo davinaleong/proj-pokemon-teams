@@ -30,7 +30,19 @@ const abilities = [
     }, {
         "name": "Swarm"
     }, {
-        "name": ""
+        "name": "Sturdy"
+    }, {
+        "name": "Technician"
+    }, {
+        "name": "Light Metal"
+    }, {
+        "name": "Flame Body"
+    }, {
+        "name": "Beast Boost"
+    }, {
+        "name": "Levitate"
+    }, {
+        "name": "Emergency Exit"
     }
 ];
 

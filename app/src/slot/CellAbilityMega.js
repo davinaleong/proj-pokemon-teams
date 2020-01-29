@@ -1,6 +1,6 @@
 import React from 'react';
 
-import abilities from '../data/abilities';
+import SlotTitle from './SlotTitle';
 
 class CellAbilityMega extends React.Component {
     constructor(props) {
@@ -18,9 +18,10 @@ class CellAbilityMega extends React.Component {
 
     render() {
         return (
-            <p className="cell-ability">
+            <div className="cell-ability">
+                <SlotTitle title={'Ability'} />
                 {this.renderAbility(this.props.ability)}
-            </p>
+            </div>
         );
     }
 }
