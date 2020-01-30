@@ -126,7 +126,6 @@ main {
     display: grid;
     grid-template-areas:
         'cell-image cell-arrow cell-image-mega';
-    @extend .mb-3;
 }
 
 .cell-image {
