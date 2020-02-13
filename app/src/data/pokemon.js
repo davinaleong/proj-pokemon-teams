@@ -270,6 +270,54 @@ const pokemon = [
             "sprite": "golisopod.png",
             "icon": "golisopod-icon.png"
         }
+    }, {
+        "name": "Tyranitar",
+        "types": ["Dark", "Rock"],
+        "images": {
+            "animated": "tyranitar.gif",
+            "sprite": "tyranitar.png",
+            "icon": "tyranitar-icon.png"
+        }
+    }, {
+        "name": "Hydreigon",
+        "types": ["Dark", "Dragon"],
+        "images": {
+            "animated": "hydreigon.gif",
+            "sprite": "hydreigon.png",
+            "icon": "hydreigon-icon.png"
+        }
+    }, {
+        "name": "Bisharp",
+        "types": ["Dark", "Steel"],
+        "images": {
+            "animated": "bisharp.gif",
+            "sprite": "bisharp.png",
+            "icon": "bisharp-icon.png"
+        }
+    }, {
+        "name": "Malamar",
+        "types": ["Dark", "Psychic"],
+        "images": {
+            "animated": "malamar.gif",
+            "sprite": "malamar.png",
+            "icon": "malamar-icon.png"
+        }
+    }, {
+        "name": "Greninja",
+        "types": ["Dark", "Water"],
+        "images": {
+            "animated": "greninja.gif",
+            "sprite": "greninja.png",
+            "icon": "greninja-icon.png"
+        }
+    }, {
+        "name": "Honchkrow",
+        "type": ["Dark", "Flying"],
+        "image": {
+            "animated": "honchkrow.gif",
+            "sprite": "honchkrow.png",
+            "icon": "honchrow-icon.png"
+        }
     }
 ];
 
