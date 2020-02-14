@@ -5,7 +5,8 @@ const teams = [
             require('./../teams/7/kanto-region.json'),
             require('./../teams/7/usum-water-starter.json'),
             require('./../teams/7/mega-beedrill.json'),
-            require('./../teams/7/monotype-bug.json')
+            require('./../teams/7/monotype-bug.json'),
+            require('./../teams/7/monotype-dark.json')
         ]
     }
 ];

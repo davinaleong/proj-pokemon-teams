@@ -277,7 +277,17 @@ const pokemon = [
             "animated": "tyranitar.gif",
             "sprite": "tyranitar.png",
             "icon": "tyranitar-icon.png"
-        }
+        },
+        "megas": [
+            {
+                "name": "mega",
+                "types": ["Dark", "Rock"],
+                "images": {
+                    "animated": "tyranitar_mega.gif",
+                    "sprite": "tyranitar_mega.png"
+                }
+            }
+        ]
     }, {
         "name": "Hydreigon",
         "types": ["Dark", "Dragon"],
@@ -316,7 +326,7 @@ const pokemon = [
         "image": {
             "animated": "honchkrow.gif",
             "sprite": "honchkrow.png",
-            "icon": "honchrow-icon.png"
+            "icon": "honchkrow-icon.png"
         }
     }
 ];

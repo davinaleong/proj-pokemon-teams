@@ -3,6 +3,117 @@
     "generation": "7",
     "rating": "Unrated",
     "slots": [
-        
+        {
+            "name": "Lead + Support",
+            "pokemon": "Tyranitar",
+            "mega": {
+                "name": "mega",
+                "ability": "Sand Stream"
+            },
+            "ability": "Sand Stream",
+            "item": "Tyranitarite",
+            "nature": "Adamant",
+            "effortValues": [
+                "4 HP",
+                "252 A",
+                "252 S"
+            ],
+            "moves": [
+                ["Stealth Rocks"],
+                ["Stone Edge"],
+                ["Earthquake"],
+                ["Crunch"]
+            ]
+        }, {
+            "name": "Special Sweeper",
+            "pokemon": "Hydreigon",
+            "mega": null,
+            "ability": "Levitate",
+            "item": "Choice Specs",
+            "nature": "Timid",
+            "effortValues": [
+                "4 HP",
+                "252 SA",
+                "252 S"
+            ],
+            "moves": [
+                ["Draco Meteor"],
+                ["Dark Pulse"],
+                ["Fire Blast"],
+                ["U-Turn"]
+            ]
+        }, {
+            "name": "Fairy-Counter",
+            "pokemon": "Bisharp",
+            "mega": null,
+            "ability": "Defiant",
+            "item": "Life Orb",
+            "nature": "Adamant",
+            "effortValues": [
+                "252 A",
+                "4 D",
+                "252 S"
+            ],
+            "moves": [
+                ["Swords Dance"],
+                ["Sucker Punch"],
+                ["Knock Off"],
+                ["Iron Head"]
+            ]
+        }, {
+            "name": "Bulky Physical Attacker",
+            "pokemon": "Malamar",
+            "mega": null,
+            "ability": "Contrary",
+            "item": "Leftovers",
+            "nature": "Careful",
+            "effortValues": [
+                "252 HP",
+                "252 D",
+                "4 SD"
+            ],
+            "moves": [
+                ["Superpower"],
+                ["Knock Off"],
+                ["Sleep Talk"],
+                ["Rest"]
+            ]
+        }, {
+            "name": "Special Sweeper",
+            "pokemon": "Greninja",
+            "mega": null,
+            "ability": "Protean",
+            "item": "Choice Scarf",
+            "nature": "Naive",
+            "effortValues": [
+                "4 HP",
+                "252 SA",
+                "252 S"
+            ],
+            "moves": [
+                ["Gunk Shot"],
+                ["U-Turn", "Water Shuriken"],
+                ["Ice Beam"],
+                ["Hydro Pump"]
+            ]
+        }, {
+            "name": "Fighting-Counter",
+            "pokemon": "Honchkrow",
+            "mega": null,
+            "ability": "Super Luck",
+            "item": "Scope Lens",
+            "nature": "Adamant",
+            "effortValues": [
+                "4 HP",
+                "252 A",
+                "252 S"
+            ],
+            "moves": [
+                ["Brave Bird"],
+                ["Night Slash"],
+                ["Steel Wing"],
+                ["Roost"]
+            ]
+        }
     ]
 }

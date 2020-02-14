@@ -43,6 +43,18 @@ const abilities = [
         "name": "Levitate"
     }, {
         "name": "Emergency Exit"
+    }, {
+        "name": "Sand Stream"
+    }, {
+        "name": "Defiant"
+    }, {
+        "name": "Contrary"
+    }, {
+        "name": "Protean"
+    }, {
+        "name": "Super Luck"
+    }, {
+        "name": "Pressure"
     }
 ];
 
